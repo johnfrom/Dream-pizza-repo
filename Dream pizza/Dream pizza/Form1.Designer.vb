@@ -25,6 +25,7 @@ Partial Class Form1
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblCustomer = New System.Windows.Forms.Label()
         Me.lblPhone = New System.Windows.Forms.Label()
+        Me.lblAddress = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -41,7 +42,7 @@ Partial Class Form1
         '
         Me.lblCustomer.AutoSize = True
         Me.lblCustomer.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCustomer.Location = New System.Drawing.Point(12, 60)
+        Me.lblCustomer.Location = New System.Drawing.Point(12, 86)
         Me.lblCustomer.Name = "lblCustomer"
         Me.lblCustomer.Size = New System.Drawing.Size(153, 26)
         Me.lblCustomer.TabIndex = 1
@@ -51,17 +52,28 @@ Partial Class Form1
         '
         Me.lblPhone.AutoSize = True
         Me.lblPhone.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPhone.Location = New System.Drawing.Point(12, 107)
+        Me.lblPhone.Location = New System.Drawing.Point(12, 133)
         Me.lblPhone.Name = "lblPhone"
         Me.lblPhone.Size = New System.Drawing.Size(144, 26)
         Me.lblPhone.TabIndex = 2
         Me.lblPhone.Text = "Phone number:"
         '
+        'lblAddress
+        '
+        Me.lblAddress.AutoSize = True
+        Me.lblAddress.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAddress.Location = New System.Drawing.Point(12, 180)
+        Me.lblAddress.Name = "lblAddress"
+        Me.lblAddress.Size = New System.Drawing.Size(85, 26)
+        Me.lblAddress.TabIndex = 3
+        Me.lblAddress.Text = "Address:"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1028, 614)
+        Me.Controls.Add(Me.lblAddress)
         Me.Controls.Add(Me.lblPhone)
         Me.Controls.Add(Me.lblCustomer)
         Me.Controls.Add(Me.lblTitle)
@@ -75,4 +87,5 @@ Partial Class Form1
     Friend WithEvents lblTitle As Label
     Friend WithEvents lblCustomer As Label
     Friend WithEvents lblPhone As Label
+    Friend WithEvents lblAddress As Label
 End Class
