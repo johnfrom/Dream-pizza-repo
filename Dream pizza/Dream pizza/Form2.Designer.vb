@@ -32,7 +32,7 @@ Partial Class Form2
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox1.Image = Global.Dream_pizza.My.Resources.Resources.pizza_PNG43985
-        Me.PictureBox1.Location = New System.Drawing.Point(26, 50)
+        Me.PictureBox1.Location = New System.Drawing.Point(27, 49)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(392, 356)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
