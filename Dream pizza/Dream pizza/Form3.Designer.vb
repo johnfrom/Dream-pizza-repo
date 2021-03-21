@@ -41,6 +41,7 @@ Partial Class Form3
         Me.Label12 = New System.Windows.Forms.Label()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -220,11 +221,21 @@ Partial Class Form3
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(577, 319)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(21, 13)
+        Me.Label13.TabIndex = 19
+        Me.Label13.Text = "joe"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label12)
@@ -270,4 +281,5 @@ Partial Class Form3
     Friend WithEvents Label12 As Label
     Friend WithEvents ComboBox6 As ComboBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label13 As Label
 End Class
