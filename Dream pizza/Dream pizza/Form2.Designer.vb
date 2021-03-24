@@ -25,10 +25,10 @@ Partial Class Form2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtAdress = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -50,7 +50,7 @@ Partial Class Form2
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox1.Image = Global.Dream_pizza.My.Resources.Resources.pizza_png_3
-        Me.PictureBox1.Location = New System.Drawing.Point(50, 47)
+        Me.PictureBox1.Location = New System.Drawing.Point(46, 39)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(392, 356)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -66,19 +66,19 @@ Partial Class Form2
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Customer Name:"
         '
-        'TextBox1
+        'txtName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(601, 182)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(165, 20)
-        Me.TextBox1.TabIndex = 15
+        Me.txtName.Location = New System.Drawing.Point(601, 182)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(165, 20)
+        Me.txtName.TabIndex = 15
         '
-        'TextBox2
+        'txtPhone
         '
-        Me.TextBox2.Location = New System.Drawing.Point(601, 220)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(165, 20)
-        Me.TextBox2.TabIndex = 17
+        Me.txtPhone.Location = New System.Drawing.Point(601, 220)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(165, 20)
+        Me.txtPhone.TabIndex = 17
         '
         'Label3
         '
@@ -89,12 +89,13 @@ Partial Class Form2
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Phone Number:"
         '
-        'TextBox3
+        'txtAdress
         '
-        Me.TextBox3.Location = New System.Drawing.Point(601, 258)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(165, 20)
-        Me.TextBox3.TabIndex = 19
+        Me.txtAdress.Enabled = False
+        Me.txtAdress.Location = New System.Drawing.Point(601, 258)
+        Me.txtAdress.Name = "txtAdress"
+        Me.txtAdress.Size = New System.Drawing.Size(165, 20)
+        Me.txtAdress.TabIndex = 19
         '
         'Label4
         '
@@ -110,17 +111,18 @@ Partial Class Form2
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(510, 148)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(43, 13)
+        Me.Label5.Size = New System.Drawing.Size(48, 13)
         Me.Label5.TabIndex = 20
-        Me.Label5.Text = "Pickup:"
+        Me.Label5.Text = "Delivery:"
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(601, 147)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
+        Me.CheckBox1.Size = New System.Drawing.Size(56, 17)
         Me.CheckBox1.TabIndex = 21
+        Me.CheckBox1.Text = "$3 fee"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Button1
@@ -140,11 +142,11 @@ Partial Class Form2
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtAdress)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
@@ -158,10 +160,10 @@ Partial Class Form2
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents txtPhone As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtAdress As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents CheckBox1 As CheckBox
