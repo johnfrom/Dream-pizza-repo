@@ -59,7 +59,6 @@ Partial Class Form3
         Me.Label24 = New System.Windows.Forms.Label()
         Me.ComboBox12 = New System.Windows.Forms.ComboBox()
         Me.lblOrder = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -406,21 +405,11 @@ Partial Class Form3
         Me.lblOrder.TabIndex = 36
         Me.lblOrder.Text = "stuff"
         '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(519, 312)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(21, 13)
-        Me.Label25.TabIndex = 37
-        Me.Label25.Text = "joe"
-        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.lblOrder)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
@@ -458,7 +447,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.name = "Form3"
+        Me.Name = "Form3"
         Me.Text = "Form3"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -502,5 +491,4 @@ Partial Class Form3
     Friend WithEvents Label24 As Label
     Friend WithEvents ComboBox12 As ComboBox
     Friend WithEvents lblOrder As Label
-    Friend WithEvents Label25 As Label
 End Class
