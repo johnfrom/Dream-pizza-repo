@@ -58,6 +58,7 @@ Partial Class Form3
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.ComboBox12 = New System.Windows.Forms.ComboBox()
+        Me.lblOrder = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -396,11 +397,20 @@ Partial Class Form3
         Me.ComboBox12.TabIndex = 18
         Me.ComboBox12.Text = "0"
         '
+        'lblOrder
+        '
+        Me.lblOrder.Location = New System.Drawing.Point(566, 42)
+        Me.lblOrder.Name = "lblOrder"
+        Me.lblOrder.Size = New System.Drawing.Size(150, 151)
+        Me.lblOrder.TabIndex = 36
+        Me.lblOrder.Text = "stuff"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblOrder)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.ComboBox7)
@@ -480,4 +490,5 @@ Partial Class Form3
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents ComboBox12 As ComboBox
+    Friend WithEvents lblOrder As Label
 End Class

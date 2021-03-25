@@ -28,7 +28,7 @@ Partial Class Form2
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtAdress = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -89,22 +89,22 @@ Partial Class Form2
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Phone Number:"
         '
-        'txtAdress
+        'txtAddress
         '
-        Me.txtAdress.Enabled = False
-        Me.txtAdress.Location = New System.Drawing.Point(601, 258)
-        Me.txtAdress.Name = "txtAdress"
-        Me.txtAdress.Size = New System.Drawing.Size(165, 20)
-        Me.txtAdress.TabIndex = 19
+        Me.txtAddress.Enabled = False
+        Me.txtAddress.Location = New System.Drawing.Point(601, 258)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(165, 20)
+        Me.txtAddress.TabIndex = 19
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(510, 261)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 13)
+        Me.Label4.Size = New System.Drawing.Size(48, 13)
         Me.Label4.TabIndex = 18
-        Me.Label4.Text = "Adress:"
+        Me.Label4.Text = "Address:"
         '
         'Label5
         '
@@ -142,7 +142,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtAdress)
+        Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.Label3)
@@ -150,7 +150,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "Form2"
+        Me.name = "Form2"
         Me.Text = "Form2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -163,7 +163,7 @@ Partial Class Form2
     Friend WithEvents txtName As TextBox
     Friend WithEvents txtPhone As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtAdress As TextBox
+    Friend WithEvents txtAddress As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents CheckBox1 As CheckBox
