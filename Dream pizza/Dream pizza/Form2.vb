@@ -1,5 +1,7 @@
 ﻿Public Class Form2
-
+    Public names As String
+    Public phone As String
+    Public address As String
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If txtName.Text = "" Then
             MessageBox.Show("you need to enter your name")
@@ -8,6 +10,9 @@
         ElseIf CheckBox1.Checked = True And txtAddress.Text = "" Then
             MessageBox.Show("you need to enter your address")
         Else Hide()
+            names = txtName.Text
+            phone = txtPhone.Text
+            address = txtAddress.Text
             Form3.Show()
         End If
 
