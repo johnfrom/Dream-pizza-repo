@@ -22,29 +22,29 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblTitle = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
-        Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.chkDelivery = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtPhone = New System.Windows.Forms.MaskedTextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblTitle
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("MV Boli", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(505, 73)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(236, 46)
-        Me.Label1.TabIndex = 13
-        Me.Label1.Text = "Dream Pizza"
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("MV Boli", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(505, 73)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(236, 46)
+        Me.lblTitle.TabIndex = 13
+        Me.lblTitle.Text = "Dream Pizza"
         '
         'PictureBox1
         '
@@ -73,13 +73,6 @@ Partial Class Form2
         Me.txtName.Size = New System.Drawing.Size(165, 20)
         Me.txtName.TabIndex = 15
         '
-        'txtPhone
-        '
-        Me.txtPhone.Location = New System.Drawing.Point(601, 220)
-        Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(165, 20)
-        Me.txtPhone.TabIndex = 17
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -88,14 +81,6 @@ Partial Class Form2
         Me.Label3.Size = New System.Drawing.Size(81, 13)
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Phone Number:"
-        '
-        'txtAddress
-        '
-        Me.txtAddress.Enabled = False
-        Me.txtAddress.Location = New System.Drawing.Point(601, 258)
-        Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(165, 20)
-        Me.txtAddress.TabIndex = 19
         '
         'Label4
         '
@@ -115,15 +100,15 @@ Partial Class Form2
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Delivery:"
         '
-        'CheckBox1
+        'chkDelivery
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(601, 147)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(56, 17)
-        Me.CheckBox1.TabIndex = 21
-        Me.CheckBox1.Text = "$3 fee"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.chkDelivery.AutoSize = True
+        Me.chkDelivery.Location = New System.Drawing.Point(601, 147)
+        Me.chkDelivery.Name = "chkDelivery"
+        Me.chkDelivery.Size = New System.Drawing.Size(56, 17)
+        Me.chkDelivery.TabIndex = 21
+        Me.chkDelivery.Text = "$3 fee"
+        Me.chkDelivery.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -134,38 +119,54 @@ Partial Class Form2
         Me.Button1.Text = "Continue"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'txtPhone
+        '
+        Me.txtPhone.Location = New System.Drawing.Point(601, 220)
+        Me.txtPhone.Mask = "(999) 000-0000"
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(165, 20)
+        Me.txtPhone.TabIndex = 23
+        '
+        'txtAddress
+        '
+        Me.txtAddress.Enabled = False
+        Me.txtAddress.Location = New System.Drawing.Point(601, 258)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(165, 20)
+        Me.txtAddress.TabIndex = 19
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.chkDelivery)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtPhone)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.PictureBox1)
-        Me.name = "Form2"
+        Me.Name = "Form2"
         Me.Text = "Form2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblTitle As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txtName As TextBox
-    Friend WithEvents txtPhone As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtAddress As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents chkDelivery As CheckBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents txtPhone As MaskedTextBox
+    Friend WithEvents txtAddress As TextBox
 End Class

@@ -23,5 +23,7 @@ Address: " & Form2.address & ""
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
         Close()
+        Form2.Close()
+        Form1.Close()
     End Sub
 End Class
