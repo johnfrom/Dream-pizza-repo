@@ -3,6 +3,7 @@
     Public phone As String
     Public address As String
     Public delivery As String
+    Public cost As Decimal
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If txtName.Text = "" Then
             MessageBox.Show("you need to enter your name")

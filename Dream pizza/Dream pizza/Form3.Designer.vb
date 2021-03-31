@@ -22,56 +22,56 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbCheese = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbBeef = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.cmbBurger = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.cmbHawaiian = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.cmbPepperoni = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.cmbMeat = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.cmbNewYorkCheese = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.ComboBox8 = New System.Windows.Forms.ComboBox()
+        Me.cmbOlive = New System.Windows.Forms.ComboBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.cmbMegaPepperoni = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.ComboBox10 = New System.Windows.Forms.ComboBox()
+        Me.cmbMegaMeat = New System.Windows.Forms.ComboBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.ComboBox11 = New System.Windows.Forms.ComboBox()
+        Me.cmbParmesean = New System.Windows.Forms.ComboBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.ComboBox12 = New System.Windows.Forms.ComboBox()
+        Me.cmbSupreme = New System.Windows.Forms.ComboBox()
         Me.lblOrder = New System.Windows.Forms.Label()
         Me.btnGoBack = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'cmbCheese
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox1.Location = New System.Drawing.Point(86, 35)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox1.TabIndex = 0
+        Me.cmbCheese.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCheese.FormattingEnabled = True
+        Me.cmbCheese.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbCheese.Location = New System.Drawing.Point(86, 35)
+        Me.cmbCheese.Name = "cmbCheese"
+        Me.cmbCheese.Size = New System.Drawing.Size(35, 21)
+        Me.cmbCheese.TabIndex = 0
         '
         'Label1
         '
@@ -109,15 +109,15 @@ Partial Class Form3
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Beef and Onion"
         '
-        'ComboBox2
+        'cmbBeef
         '
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox2.Location = New System.Drawing.Point(86, 94)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox2.TabIndex = 3
+        Me.cmbBeef.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbBeef.FormattingEnabled = True
+        Me.cmbBeef.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbBeef.Location = New System.Drawing.Point(86, 94)
+        Me.cmbBeef.Name = "cmbBeef"
+        Me.cmbBeef.Size = New System.Drawing.Size(35, 21)
+        Me.cmbBeef.TabIndex = 3
         '
         'Label5
         '
@@ -137,15 +137,15 @@ Partial Class Form3
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "Cheeseburger"
         '
-        'ComboBox3
+        'cmbBurger
         '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox3.Location = New System.Drawing.Point(86, 161)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox3.TabIndex = 6
+        Me.cmbBurger.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbBurger.FormattingEnabled = True
+        Me.cmbBurger.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbBurger.Location = New System.Drawing.Point(86, 161)
+        Me.cmbBurger.Name = "cmbBurger"
+        Me.cmbBurger.Size = New System.Drawing.Size(35, 21)
+        Me.cmbBurger.TabIndex = 6
         '
         'Label7
         '
@@ -165,15 +165,15 @@ Partial Class Form3
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "Hawaiian "
         '
-        'ComboBox4
+        'cmbHawaiian
         '
-        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox4.Location = New System.Drawing.Point(86, 229)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox4.TabIndex = 9
+        Me.cmbHawaiian.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbHawaiian.FormattingEnabled = True
+        Me.cmbHawaiian.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbHawaiian.Location = New System.Drawing.Point(86, 229)
+        Me.cmbHawaiian.Name = "cmbHawaiian"
+        Me.cmbHawaiian.Size = New System.Drawing.Size(35, 21)
+        Me.cmbHawaiian.TabIndex = 9
         '
         'Label9
         '
@@ -193,15 +193,15 @@ Partial Class Form3
         Me.Label10.TabIndex = 13
         Me.Label10.Text = "Pepperoni"
         '
-        'ComboBox5
+        'cmbPepperoni
         '
-        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox5.Location = New System.Drawing.Point(86, 304)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox5.TabIndex = 12
+        Me.cmbPepperoni.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbPepperoni.FormattingEnabled = True
+        Me.cmbPepperoni.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbPepperoni.Location = New System.Drawing.Point(86, 304)
+        Me.cmbPepperoni.Name = "cmbPepperoni"
+        Me.cmbPepperoni.Size = New System.Drawing.Size(35, 21)
+        Me.cmbPepperoni.TabIndex = 12
         '
         'Label11
         '
@@ -221,15 +221,15 @@ Partial Class Form3
         Me.Label12.TabIndex = 16
         Me.Label12.Text = "Meat lovers"
         '
-        'ComboBox6
+        'cmbMeat
         '
-        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox6.Location = New System.Drawing.Point(86, 389)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox6.TabIndex = 15
+        Me.cmbMeat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbMeat.FormattingEnabled = True
+        Me.cmbMeat.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbMeat.Location = New System.Drawing.Point(86, 389)
+        Me.cmbMeat.Name = "cmbMeat"
+        Me.cmbMeat.Size = New System.Drawing.Size(35, 21)
+        Me.cmbMeat.TabIndex = 15
         '
         'Label13
         '
@@ -249,15 +249,15 @@ Partial Class Form3
         Me.Label14.TabIndex = 34
         Me.Label14.Text = "New Yorker Cheese"
         '
-        'ComboBox7
+        'cmbNewYorkCheese
         '
-        Me.ComboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox7.Location = New System.Drawing.Point(248, 389)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox7.TabIndex = 33
+        Me.cmbNewYorkCheese.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbNewYorkCheese.FormattingEnabled = True
+        Me.cmbNewYorkCheese.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbNewYorkCheese.Location = New System.Drawing.Point(248, 389)
+        Me.cmbNewYorkCheese.Name = "cmbNewYorkCheese"
+        Me.cmbNewYorkCheese.Size = New System.Drawing.Size(35, 21)
+        Me.cmbNewYorkCheese.TabIndex = 33
         '
         'Label15
         '
@@ -277,15 +277,15 @@ Partial Class Form3
         Me.Label16.TabIndex = 31
         Me.Label16.Text = "Olive and Mushroom"
         '
-        'ComboBox8
+        'cmbOlive
         '
-        Me.ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox8.Location = New System.Drawing.Point(248, 304)
-        Me.ComboBox8.Name = "ComboBox8"
-        Me.ComboBox8.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox8.TabIndex = 30
+        Me.cmbOlive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbOlive.FormattingEnabled = True
+        Me.cmbOlive.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbOlive.Location = New System.Drawing.Point(248, 304)
+        Me.cmbOlive.Name = "cmbOlive"
+        Me.cmbOlive.Size = New System.Drawing.Size(35, 21)
+        Me.cmbOlive.TabIndex = 30
         '
         'Label17
         '
@@ -305,15 +305,15 @@ Partial Class Form3
         Me.Label18.TabIndex = 28
         Me.Label18.Text = "Super Mega Pepperoni"
         '
-        'ComboBox9
+        'cmbMegaPepperoni
         '
-        Me.ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox9.Location = New System.Drawing.Point(248, 229)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox9.TabIndex = 27
+        Me.cmbMegaPepperoni.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbMegaPepperoni.FormattingEnabled = True
+        Me.cmbMegaPepperoni.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbMegaPepperoni.Location = New System.Drawing.Point(248, 229)
+        Me.cmbMegaPepperoni.Name = "cmbMegaPepperoni"
+        Me.cmbMegaPepperoni.Size = New System.Drawing.Size(35, 21)
+        Me.cmbMegaPepperoni.TabIndex = 27
         '
         'Label19
         '
@@ -333,15 +333,15 @@ Partial Class Form3
         Me.Label20.TabIndex = 25
         Me.Label20.Text = "Mega Meat"
         '
-        'ComboBox10
+        'cmbMegaMeat
         '
-        Me.ComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox10.FormattingEnabled = True
-        Me.ComboBox10.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox10.Location = New System.Drawing.Point(248, 161)
-        Me.ComboBox10.Name = "ComboBox10"
-        Me.ComboBox10.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox10.TabIndex = 24
+        Me.cmbMegaMeat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbMegaMeat.FormattingEnabled = True
+        Me.cmbMegaMeat.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbMegaMeat.Location = New System.Drawing.Point(248, 161)
+        Me.cmbMegaMeat.Name = "cmbMegaMeat"
+        Me.cmbMegaMeat.Size = New System.Drawing.Size(35, 21)
+        Me.cmbMegaMeat.TabIndex = 24
         '
         'Label21
         '
@@ -361,15 +361,15 @@ Partial Class Form3
         Me.Label22.TabIndex = 22
         Me.Label22.Text = "Parmesan Cheese"
         '
-        'ComboBox11
+        'cmbParmesean
         '
-        Me.ComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox11.FormattingEnabled = True
-        Me.ComboBox11.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox11.Location = New System.Drawing.Point(248, 94)
-        Me.ComboBox11.Name = "ComboBox11"
-        Me.ComboBox11.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox11.TabIndex = 21
+        Me.cmbParmesean.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbParmesean.FormattingEnabled = True
+        Me.cmbParmesean.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbParmesean.Location = New System.Drawing.Point(248, 94)
+        Me.cmbParmesean.Name = "cmbParmesean"
+        Me.cmbParmesean.Size = New System.Drawing.Size(35, 21)
+        Me.cmbParmesean.TabIndex = 21
         '
         'Label23
         '
@@ -389,15 +389,15 @@ Partial Class Form3
         Me.Label24.TabIndex = 19
         Me.Label24.Text = "Supreme"
         '
-        'ComboBox12
+        'cmbSupreme
         '
-        Me.ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
-        Me.ComboBox12.Location = New System.Drawing.Point(248, 35)
-        Me.ComboBox12.Name = "ComboBox12"
-        Me.ComboBox12.Size = New System.Drawing.Size(35, 21)
-        Me.ComboBox12.TabIndex = 18
+        Me.cmbSupreme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbSupreme.FormattingEnabled = True
+        Me.cmbSupreme.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5"})
+        Me.cmbSupreme.Location = New System.Drawing.Point(248, 35)
+        Me.cmbSupreme.Name = "cmbSupreme"
+        Me.cmbSupreme.Size = New System.Drawing.Size(35, 21)
+        Me.cmbSupreme.TabIndex = 18
         '
         'lblOrder
         '
@@ -435,40 +435,40 @@ Partial Class Form3
         Me.Controls.Add(Me.lblOrder)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.ComboBox7)
+        Me.Controls.Add(Me.cmbNewYorkCheese)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.ComboBox8)
+        Me.Controls.Add(Me.cmbOlive)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.ComboBox9)
+        Me.Controls.Add(Me.cmbMegaPepperoni)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.ComboBox10)
+        Me.Controls.Add(Me.cmbMegaMeat)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.ComboBox11)
+        Me.Controls.Add(Me.cmbParmesean)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label24)
-        Me.Controls.Add(Me.ComboBox12)
+        Me.Controls.Add(Me.cmbSupreme)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.ComboBox6)
+        Me.Controls.Add(Me.cmbMeat)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.ComboBox5)
+        Me.Controls.Add(Me.cmbPepperoni)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.cmbHawaiian)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.cmbBurger)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.cmbBeef)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbCheese)
         Me.Name = "Form3"
         Me.Text = "Form3"
         Me.ResumeLayout(False)
@@ -476,42 +476,42 @@ Partial Class Form3
 
     End Sub
 
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbCheese As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cmbBeef As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents cmbBurger As ComboBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents cmbHawaiian As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents cmbPepperoni As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents cmbMeat As ComboBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents cmbNewYorkCheese As ComboBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents ComboBox8 As ComboBox
+    Friend WithEvents cmbOlive As ComboBox
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
-    Friend WithEvents ComboBox9 As ComboBox
+    Friend WithEvents cmbMegaPepperoni As ComboBox
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents ComboBox10 As ComboBox
+    Friend WithEvents cmbMegaMeat As ComboBox
     Friend WithEvents Label21 As Label
     Friend WithEvents Label22 As Label
-    Friend WithEvents ComboBox11 As ComboBox
+    Friend WithEvents cmbParmesean As ComboBox
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
-    Friend WithEvents ComboBox12 As ComboBox
+    Friend WithEvents cmbSupreme As ComboBox
     Friend WithEvents lblOrder As Label
     Friend WithEvents btnGoBack As Button
     Friend WithEvents btnQuit As Button
