@@ -5,9 +5,14 @@
     Public delivery As String
     Public cost As Decimal
     Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        If chkDelivery.Checked = True Then
+            Form3.totalammount = Val(3)
+        End If
+
         If txtName.Text = "" Then
             MessageBox.Show("you need to enter your name")
-        ElseIf txtPhone.Text = "" Then
+        ElseIf txtPhone.Text = "(   )    -" Then
             MessageBox.Show("you need to enter your phone number")
         ElseIf chkDelivery.Checked = True And txtAddress.Text = "" Then
             MessageBox.Show("you need to enter your address")
@@ -17,6 +22,11 @@
             address = txtAddress.Text
             Form3.Show()
         End If
+
+
+
+
+
 
     End Sub
 

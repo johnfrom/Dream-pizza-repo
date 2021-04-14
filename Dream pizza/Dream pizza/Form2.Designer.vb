@@ -105,9 +105,9 @@ Partial Class Form2
         Me.chkDelivery.AutoSize = True
         Me.chkDelivery.Location = New System.Drawing.Point(601, 147)
         Me.chkDelivery.Name = "chkDelivery"
-        Me.chkDelivery.Size = New System.Drawing.Size(56, 17)
+        Me.chkDelivery.Size = New System.Drawing.Size(62, 17)
         Me.chkDelivery.TabIndex = 21
-        Me.chkDelivery.Text = "$3 fee"
+        Me.chkDelivery.Text = "($3 fee)"
         Me.chkDelivery.UseVisualStyleBackColor = True
         '
         'Button1

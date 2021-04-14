@@ -61,6 +61,19 @@ Partial Class Form3
         Me.lblOrder = New System.Windows.Forms.Label()
         Me.btnGoBack = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.lblPizza1 = New System.Windows.Forms.Label()
+        Me.lblPizza2 = New System.Windows.Forms.Label()
+        Me.lblPizza3 = New System.Windows.Forms.Label()
+        Me.lblPizza4 = New System.Windows.Forms.Label()
+        Me.lblPizza5 = New System.Windows.Forms.Label()
+        Me.lblPizza6 = New System.Windows.Forms.Label()
+        Me.lblPizza7 = New System.Windows.Forms.Label()
+        Me.lblPizza8 = New System.Windows.Forms.Label()
+        Me.lblPizza9 = New System.Windows.Forms.Label()
+        Me.lblPizza10 = New System.Windows.Forms.Label()
+        Me.lblPizza11 = New System.Windows.Forms.Label()
+        Me.lblPizza12 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cmbCheese
@@ -401,11 +414,11 @@ Partial Class Form3
         '
         'lblOrder
         '
-        Me.lblOrder.Location = New System.Drawing.Point(566, 42)
+        Me.lblOrder.Location = New System.Drawing.Point(401, 20)
         Me.lblOrder.Name = "lblOrder"
-        Me.lblOrder.Size = New System.Drawing.Size(150, 151)
+        Me.lblOrder.Size = New System.Drawing.Size(315, 58)
         Me.lblOrder.TabIndex = 36
-        Me.lblOrder.Text = "stuff"
+        Me.lblOrder.Text = "Order"
         '
         'btnGoBack
         '
@@ -425,11 +438,140 @@ Partial Class Form3
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
+        'lblTotal
+        '
+        Me.lblTotal.Location = New System.Drawing.Point(296, 352)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(68, 89)
+        Me.lblTotal.TabIndex = 39
+        Me.lblTotal.Text = "total"
+        '
+        'lblPizza1
+        '
+        Me.lblPizza1.AutoSize = True
+        Me.lblPizza1.Location = New System.Drawing.Point(403, 103)
+        Me.lblPizza1.Name = "lblPizza1"
+        Me.lblPizza1.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza1.TabIndex = 40
+        Me.lblPizza1.Text = "Label25"
+        '
+        'lblPizza2
+        '
+        Me.lblPizza2.AutoSize = True
+        Me.lblPizza2.Location = New System.Drawing.Point(403, 116)
+        Me.lblPizza2.Name = "lblPizza2"
+        Me.lblPizza2.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza2.TabIndex = 41
+        Me.lblPizza2.Text = "Label25"
+        '
+        'lblPizza3
+        '
+        Me.lblPizza3.AutoSize = True
+        Me.lblPizza3.Location = New System.Drawing.Point(403, 129)
+        Me.lblPizza3.Name = "lblPizza3"
+        Me.lblPizza3.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza3.TabIndex = 42
+        Me.lblPizza3.Text = "Label25"
+        '
+        'lblPizza4
+        '
+        Me.lblPizza4.AutoSize = True
+        Me.lblPizza4.Location = New System.Drawing.Point(403, 142)
+        Me.lblPizza4.Name = "lblPizza4"
+        Me.lblPizza4.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza4.TabIndex = 43
+        Me.lblPizza4.Text = "Label25"
+        '
+        'lblPizza5
+        '
+        Me.lblPizza5.AutoSize = True
+        Me.lblPizza5.Location = New System.Drawing.Point(403, 155)
+        Me.lblPizza5.Name = "lblPizza5"
+        Me.lblPizza5.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza5.TabIndex = 44
+        Me.lblPizza5.Text = "Label25"
+        '
+        'lblPizza6
+        '
+        Me.lblPizza6.AutoSize = True
+        Me.lblPizza6.Location = New System.Drawing.Point(403, 169)
+        Me.lblPizza6.Name = "lblPizza6"
+        Me.lblPizza6.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza6.TabIndex = 45
+        Me.lblPizza6.Text = "Label25"
+        '
+        'lblPizza7
+        '
+        Me.lblPizza7.AutoSize = True
+        Me.lblPizza7.Location = New System.Drawing.Point(403, 182)
+        Me.lblPizza7.Name = "lblPizza7"
+        Me.lblPizza7.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza7.TabIndex = 46
+        Me.lblPizza7.Text = "Label25"
+        '
+        'lblPizza8
+        '
+        Me.lblPizza8.AutoSize = True
+        Me.lblPizza8.Location = New System.Drawing.Point(403, 195)
+        Me.lblPizza8.Name = "lblPizza8"
+        Me.lblPizza8.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza8.TabIndex = 47
+        Me.lblPizza8.Text = "Label25"
+        '
+        'lblPizza9
+        '
+        Me.lblPizza9.AutoSize = True
+        Me.lblPizza9.Location = New System.Drawing.Point(403, 208)
+        Me.lblPizza9.Name = "lblPizza9"
+        Me.lblPizza9.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza9.TabIndex = 48
+        Me.lblPizza9.Text = "Label25"
+        '
+        'lblPizza10
+        '
+        Me.lblPizza10.AutoSize = True
+        Me.lblPizza10.Location = New System.Drawing.Point(403, 221)
+        Me.lblPizza10.Name = "lblPizza10"
+        Me.lblPizza10.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza10.TabIndex = 49
+        Me.lblPizza10.Text = "Label25"
+        '
+        'lblPizza11
+        '
+        Me.lblPizza11.AutoSize = True
+        Me.lblPizza11.Location = New System.Drawing.Point(403, 234)
+        Me.lblPizza11.Name = "lblPizza11"
+        Me.lblPizza11.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza11.TabIndex = 50
+        Me.lblPizza11.Text = "Label25"
+        '
+        'lblPizza12
+        '
+        Me.lblPizza12.AutoSize = True
+        Me.lblPizza12.Location = New System.Drawing.Point(403, 247)
+        Me.lblPizza12.Name = "lblPizza12"
+        Me.lblPizza12.Size = New System.Drawing.Size(45, 13)
+        Me.lblPizza12.TabIndex = 51
+        Me.lblPizza12.Text = "Label25"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblPizza12)
+        Me.Controls.Add(Me.lblPizza11)
+        Me.Controls.Add(Me.lblPizza10)
+        Me.Controls.Add(Me.lblPizza9)
+        Me.Controls.Add(Me.lblPizza8)
+        Me.Controls.Add(Me.lblPizza7)
+        Me.Controls.Add(Me.lblPizza6)
+        Me.Controls.Add(Me.lblPizza5)
+        Me.Controls.Add(Me.lblPizza4)
+        Me.Controls.Add(Me.lblPizza3)
+        Me.Controls.Add(Me.lblPizza2)
+        Me.Controls.Add(Me.lblPizza1)
+        Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnGoBack)
         Me.Controls.Add(Me.lblOrder)
@@ -515,4 +657,17 @@ Partial Class Form3
     Friend WithEvents lblOrder As Label
     Friend WithEvents btnGoBack As Button
     Friend WithEvents btnQuit As Button
+    Friend WithEvents lblTotal As Label
+    Friend WithEvents lblPizza1 As Label
+    Friend WithEvents lblPizza2 As Label
+    Friend WithEvents lblPizza3 As Label
+    Friend WithEvents lblPizza4 As Label
+    Friend WithEvents lblPizza5 As Label
+    Friend WithEvents lblPizza6 As Label
+    Friend WithEvents lblPizza7 As Label
+    Friend WithEvents lblPizza8 As Label
+    Friend WithEvents lblPizza9 As Label
+    Friend WithEvents lblPizza10 As Label
+    Friend WithEvents lblPizza11 As Label
+    Friend WithEvents lblPizza12 As Label
 End Class
