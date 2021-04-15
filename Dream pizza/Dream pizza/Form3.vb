@@ -1,11 +1,23 @@
 ﻿Public Class Form3
     Dim amount As Integer
     Public totalammount As Decimal
-    Dim pizzanumber As Integer
+    Dim pizza(1, 11) As Decimal
+    Const REGULARPRICE As Decimal = 8.5 ' makes the regular price 8.5
+    Const GOURMETPRICE As Decimal = REGULARPRICE + 5 ' makes the gourmet price the regular price plus 5
+
 
 
     Public Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        pizzanumber = 1
+
+        For p = 0 To 6
+            pizza(0, p) = REGULARPRICE
+        Next
+
+        For p = 7 To 11
+            pizza(0, p) = GOURMETPRICE
+        Next
+
+
         lblTotal.Text = totalammount
         If Form2.txtAddress.Text = "" Then
             lblOrder.Text = "Name: " & Form2.names & "
@@ -35,6 +47,7 @@ Delivery Address: " & Form2.address & ""
     End Sub
 
     Private Sub cmbCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCheese.SelectedIndexChanged
+        lblPizzas.Text = ""
         totalammount = Val(lblTotal.Text).ToString("C")  '    lblOrder.Text += "" & cmbCheese.Text & " Cheese pizzas $" & amount * 8.5 lblTotal.Text = totalammount + amount * 8.5
         amount = Val(cmbCheese.Text).ToString("C")
 

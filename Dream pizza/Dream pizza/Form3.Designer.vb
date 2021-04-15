@@ -74,6 +74,7 @@ Partial Class Form3
         Me.lblPizza10 = New System.Windows.Forms.Label()
         Me.lblPizza11 = New System.Windows.Forms.Label()
         Me.lblPizza12 = New System.Windows.Forms.Label()
+        Me.lblPizzas = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cmbCheese
@@ -449,7 +450,7 @@ Partial Class Form3
         'lblPizza1
         '
         Me.lblPizza1.AutoSize = True
-        Me.lblPizza1.Location = New System.Drawing.Point(403, 103)
+        Me.lblPizza1.Location = New System.Drawing.Point(743, 190)
         Me.lblPizza1.Name = "lblPizza1"
         Me.lblPizza1.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza1.TabIndex = 40
@@ -458,7 +459,7 @@ Partial Class Form3
         'lblPizza2
         '
         Me.lblPizza2.AutoSize = True
-        Me.lblPizza2.Location = New System.Drawing.Point(403, 116)
+        Me.lblPizza2.Location = New System.Drawing.Point(743, 203)
         Me.lblPizza2.Name = "lblPizza2"
         Me.lblPizza2.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza2.TabIndex = 41
@@ -467,7 +468,7 @@ Partial Class Form3
         'lblPizza3
         '
         Me.lblPizza3.AutoSize = True
-        Me.lblPizza3.Location = New System.Drawing.Point(403, 129)
+        Me.lblPizza3.Location = New System.Drawing.Point(743, 216)
         Me.lblPizza3.Name = "lblPizza3"
         Me.lblPizza3.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza3.TabIndex = 42
@@ -476,7 +477,7 @@ Partial Class Form3
         'lblPizza4
         '
         Me.lblPizza4.AutoSize = True
-        Me.lblPizza4.Location = New System.Drawing.Point(403, 142)
+        Me.lblPizza4.Location = New System.Drawing.Point(743, 229)
         Me.lblPizza4.Name = "lblPizza4"
         Me.lblPizza4.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza4.TabIndex = 43
@@ -485,7 +486,7 @@ Partial Class Form3
         'lblPizza5
         '
         Me.lblPizza5.AutoSize = True
-        Me.lblPizza5.Location = New System.Drawing.Point(403, 155)
+        Me.lblPizza5.Location = New System.Drawing.Point(743, 242)
         Me.lblPizza5.Name = "lblPizza5"
         Me.lblPizza5.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza5.TabIndex = 44
@@ -494,7 +495,7 @@ Partial Class Form3
         'lblPizza6
         '
         Me.lblPizza6.AutoSize = True
-        Me.lblPizza6.Location = New System.Drawing.Point(403, 169)
+        Me.lblPizza6.Location = New System.Drawing.Point(743, 256)
         Me.lblPizza6.Name = "lblPizza6"
         Me.lblPizza6.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza6.TabIndex = 45
@@ -503,7 +504,7 @@ Partial Class Form3
         'lblPizza7
         '
         Me.lblPizza7.AutoSize = True
-        Me.lblPizza7.Location = New System.Drawing.Point(403, 182)
+        Me.lblPizza7.Location = New System.Drawing.Point(743, 269)
         Me.lblPizza7.Name = "lblPizza7"
         Me.lblPizza7.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza7.TabIndex = 46
@@ -512,7 +513,7 @@ Partial Class Form3
         'lblPizza8
         '
         Me.lblPizza8.AutoSize = True
-        Me.lblPizza8.Location = New System.Drawing.Point(403, 195)
+        Me.lblPizza8.Location = New System.Drawing.Point(743, 282)
         Me.lblPizza8.Name = "lblPizza8"
         Me.lblPizza8.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza8.TabIndex = 47
@@ -521,7 +522,7 @@ Partial Class Form3
         'lblPizza9
         '
         Me.lblPizza9.AutoSize = True
-        Me.lblPizza9.Location = New System.Drawing.Point(403, 208)
+        Me.lblPizza9.Location = New System.Drawing.Point(743, 295)
         Me.lblPizza9.Name = "lblPizza9"
         Me.lblPizza9.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza9.TabIndex = 48
@@ -530,7 +531,7 @@ Partial Class Form3
         'lblPizza10
         '
         Me.lblPizza10.AutoSize = True
-        Me.lblPizza10.Location = New System.Drawing.Point(403, 221)
+        Me.lblPizza10.Location = New System.Drawing.Point(743, 308)
         Me.lblPizza10.Name = "lblPizza10"
         Me.lblPizza10.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza10.TabIndex = 49
@@ -539,7 +540,7 @@ Partial Class Form3
         'lblPizza11
         '
         Me.lblPizza11.AutoSize = True
-        Me.lblPizza11.Location = New System.Drawing.Point(403, 234)
+        Me.lblPizza11.Location = New System.Drawing.Point(743, 321)
         Me.lblPizza11.Name = "lblPizza11"
         Me.lblPizza11.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza11.TabIndex = 50
@@ -548,17 +549,26 @@ Partial Class Form3
         'lblPizza12
         '
         Me.lblPizza12.AutoSize = True
-        Me.lblPizza12.Location = New System.Drawing.Point(403, 247)
+        Me.lblPizza12.Location = New System.Drawing.Point(743, 334)
         Me.lblPizza12.Name = "lblPizza12"
         Me.lblPizza12.Size = New System.Drawing.Size(45, 13)
         Me.lblPizza12.TabIndex = 51
         Me.lblPizza12.Text = "Label25"
+        '
+        'lblPizzas
+        '
+        Me.lblPizzas.Location = New System.Drawing.Point(397, 90)
+        Me.lblPizzas.Name = "lblPizzas"
+        Me.lblPizzas.Size = New System.Drawing.Size(275, 235)
+        Me.lblPizzas.TabIndex = 52
+        Me.lblPizzas.Text = "Label25"
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblPizzas)
         Me.Controls.Add(Me.lblPizza12)
         Me.Controls.Add(Me.lblPizza11)
         Me.Controls.Add(Me.lblPizza10)
@@ -670,4 +680,5 @@ Partial Class Form3
     Friend WithEvents lblPizza10 As Label
     Friend WithEvents lblPizza11 As Label
     Friend WithEvents lblPizza12 As Label
+    Friend WithEvents lblPizzas As Label
 End Class
