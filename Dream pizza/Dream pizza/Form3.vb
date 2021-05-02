@@ -1,16 +1,17 @@
 ﻿Public Class Form3
     Dim amount As Integer
+    Public cost As Decimal
     Public totalammount As Decimal
     Dim pizza(1, 11) As Decimal
-    Const REGULARPRICE As Decimal = 8.5 ' makes the regular price 8.5
-    Const GOURMETPRICE As Decimal = REGULARPRICE + 5 ' makes the gourmet price the regular price plus 5
+    Const REGULARPRICE As Decimal = 8.5 'makes the regular price 8.5
+    Const GOURMETPRICE As Decimal = REGULARPRICE + 5 'makes the gourmet price the regular price plus 5
 
 
 
     Public Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         For p = 0 To 6
-            pizza(0, p) = REGULARPRICE
+            pizza(0, p) = REGULARPRICE  '
         Next
 
         For p = 7 To 11
@@ -23,7 +24,7 @@
             lblOrder.Text = "Name: " & Form2.names & "
 Phone: " & Form2.phone & "
 
-Total Cost: " & Form2.cost & ""
+Total Cost: " & cost & ""
         Else lblOrder.Text = "Name: " & Form2.names & "
 Phone: " & Form2.phone & "
 Delivery Address: " & Form2.address & ""
@@ -36,7 +37,7 @@ Delivery Address: " & Form2.address & ""
     End Sub
 
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
-        Close()  'joe
+        Close()  'closes 
         Form2.Show()
     End Sub
 
@@ -48,7 +49,7 @@ Delivery Address: " & Form2.address & ""
 
     Private Sub cmbCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCheese.SelectedIndexChanged
         lblPizzas.Text = ""
-        totalammount = Val(lblTotal.Text).ToString("C")  '    lblOrder.Text += "" & cmbCheese.Text & " Cheese pizzas $" & amount * 8.5 lblTotal.Text = totalammount + amount * 8.5
+        totalammount = Val(lblTotal.Text).ToString("C")
         amount = Val(cmbCheese.Text).ToString("C")
 
     End Sub
@@ -57,7 +58,7 @@ Delivery Address: " & Form2.address & ""
         totalammount = Val(lblTotal.Text).ToString("C")
         amount = Val(cmbBeef.Text).ToString("C")
         lblOrder.Text += "
-" & cmbBeef.Text & " Beef and Onion $" & amount * 8.5
-        lblTotal.Text = totalammount + amount * 8.5
+" & cmbBeef.Text & " Beef and Onion $" & amount * REGULARPRICE
+        lblTotal.Text = totalammount + amount * REGULARPRICE
     End Sub
 End Class
