@@ -1,6 +1,5 @@
 ﻿Public Class Form3
     Dim amount As Integer
-    Public cost As Decimal
     Public totalammount As Decimal
     Dim pizza(1, 11) As Decimal
     Const REGULARPRICE As Decimal = 8.5 'makes the regular price 8.5
@@ -11,23 +10,21 @@
     Public Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         For p = 0 To 6
-            pizza(0, p) = REGULARPRICE  '
+            pizza(0, p) = REGULARPRICE  'makes the first 7 pizzas the regular price
         Next
 
         For p = 7 To 11
-            pizza(0, p) = GOURMETPRICE
+            pizza(0, p) = GOURMETPRICE  'makes the last 5 pizzas the gourmet price
         Next
 
 
-        lblTotal.Text = totalammount
+        lblTotal.Text = totalammount  'makes the text in the total text box equal the total variable
         If Form2.txtAddress.Text = "" Then
-            lblOrder.Text = "Name: " & Form2.names & "
-Phone: " & Form2.phone & "
-
-Total Cost: " & cost & ""
+            lblOrder.Text = "Name: " & Form2.names & " 
+Phone: " & Form2.phone  'if there is no adress display the name and phone on the order label
         Else lblOrder.Text = "Name: " & Form2.names & "
 Phone: " & Form2.phone & "
-Delivery Address: " & Form2.address & ""
+Delivery Address: " & Form2.address 'also display the address
         End If
 
     End Sub
@@ -37,8 +34,8 @@ Delivery Address: " & Form2.address & ""
     End Sub
 
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
-        Close()  'closes 
-        Form2.Show()
+        Close()  'closes form 3
+        Form2.Show() 'opens form 2
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
@@ -48,17 +45,13 @@ Delivery Address: " & Form2.address & ""
     End Sub
 
     Private Sub cmbCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCheese.SelectedIndexChanged
-        lblPizzas.Text = ""
-        totalammount = Val(lblTotal.Text).ToString("C")
-        amount = Val(cmbCheese.Text).ToString("C")
+        pizza(1, 1) = Val(cmbCheese.Text).ToString("C") * pizza(0, 1)
+        lblPizzas.Text = pizza(1, 1) & pizza(1, 2)
 
     End Sub
 
     Private Sub cmbBeef_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBeef.SelectedIndexChanged
-        totalammount = Val(lblTotal.Text).ToString("C")
-        amount = Val(cmbBeef.Text).ToString("C")
-        lblOrder.Text += "
-" & cmbBeef.Text & " Beef and Onion $" & amount * REGULARPRICE
-        lblTotal.Text = totalammount + amount * REGULARPRICE
+        pizza(1, 2) = Val(cmbBeef.Text) * pizza(0, 2)
+        lblPizzas.Text = pizza(1, 1) & pizza(1, 2)
     End Sub
 End Class
