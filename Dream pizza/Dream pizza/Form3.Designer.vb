@@ -75,6 +75,18 @@ Partial Class Form3
         Me.lblPizza11 = New System.Windows.Forms.Label()
         Me.lblPizza12 = New System.Windows.Forms.Label()
         Me.lblPizzas = New System.Windows.Forms.Label()
+        Me.lblCheeseCost = New System.Windows.Forms.Label()
+        Me.lblBeefCost = New System.Windows.Forms.Label()
+        Me.lblBurgerCost = New System.Windows.Forms.Label()
+        Me.lblHawaiianCost = New System.Windows.Forms.Label()
+        Me.lblPepperoniCost = New System.Windows.Forms.Label()
+        Me.lblMeatCost = New System.Windows.Forms.Label()
+        Me.lblSupremeCost = New System.Windows.Forms.Label()
+        Me.lblParmesanCost = New System.Windows.Forms.Label()
+        Me.lblMegaCost = New System.Windows.Forms.Label()
+        Me.lblMeggaPepperoniCost = New System.Windows.Forms.Label()
+        Me.lblOliveCost = New System.Windows.Forms.Label()
+        Me.lblNewYorkerCost = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'cmbCheese
@@ -441,7 +453,7 @@ Partial Class Form3
         '
         'lblTotal
         '
-        Me.lblTotal.Location = New System.Drawing.Point(296, 352)
+        Me.lblTotal.Location = New System.Drawing.Point(720, 21)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Size = New System.Drawing.Size(68, 89)
         Me.lblTotal.TabIndex = 39
@@ -563,11 +575,131 @@ Partial Class Form3
         Me.lblPizzas.TabIndex = 52
         Me.lblPizzas.Text = "Label25"
         '
+        'lblCheeseCost
+        '
+        Me.lblCheeseCost.AutoSize = True
+        Me.lblCheeseCost.Location = New System.Drawing.Point(127, 38)
+        Me.lblCheeseCost.Name = "lblCheeseCost"
+        Me.lblCheeseCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblCheeseCost.TabIndex = 53
+        Me.lblCheeseCost.Text = "cost"
+        '
+        'lblBeefCost
+        '
+        Me.lblBeefCost.AutoSize = True
+        Me.lblBeefCost.Location = New System.Drawing.Point(127, 97)
+        Me.lblBeefCost.Name = "lblBeefCost"
+        Me.lblBeefCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblBeefCost.TabIndex = 54
+        Me.lblBeefCost.Text = "cost"
+        '
+        'lblBurgerCost
+        '
+        Me.lblBurgerCost.AutoSize = True
+        Me.lblBurgerCost.Location = New System.Drawing.Point(127, 164)
+        Me.lblBurgerCost.Name = "lblBurgerCost"
+        Me.lblBurgerCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblBurgerCost.TabIndex = 55
+        Me.lblBurgerCost.Text = "cost"
+        '
+        'lblHawaiianCost
+        '
+        Me.lblHawaiianCost.AutoSize = True
+        Me.lblHawaiianCost.Location = New System.Drawing.Point(127, 232)
+        Me.lblHawaiianCost.Name = "lblHawaiianCost"
+        Me.lblHawaiianCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblHawaiianCost.TabIndex = 56
+        Me.lblHawaiianCost.Text = "cost"
+        '
+        'lblPepperoniCost
+        '
+        Me.lblPepperoniCost.AutoSize = True
+        Me.lblPepperoniCost.Location = New System.Drawing.Point(127, 307)
+        Me.lblPepperoniCost.Name = "lblPepperoniCost"
+        Me.lblPepperoniCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblPepperoniCost.TabIndex = 57
+        Me.lblPepperoniCost.Text = "cost"
+        '
+        'lblMeatCost
+        '
+        Me.lblMeatCost.AutoSize = True
+        Me.lblMeatCost.Location = New System.Drawing.Point(127, 392)
+        Me.lblMeatCost.Name = "lblMeatCost"
+        Me.lblMeatCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblMeatCost.TabIndex = 58
+        Me.lblMeatCost.Text = "cost"
+        '
+        'lblSupremeCost
+        '
+        Me.lblSupremeCost.AutoSize = True
+        Me.lblSupremeCost.Location = New System.Drawing.Point(289, 38)
+        Me.lblSupremeCost.Name = "lblSupremeCost"
+        Me.lblSupremeCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblSupremeCost.TabIndex = 59
+        Me.lblSupremeCost.Text = "cost"
+        '
+        'lblParmesanCost
+        '
+        Me.lblParmesanCost.AutoSize = True
+        Me.lblParmesanCost.Location = New System.Drawing.Point(289, 97)
+        Me.lblParmesanCost.Name = "lblParmesanCost"
+        Me.lblParmesanCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblParmesanCost.TabIndex = 60
+        Me.lblParmesanCost.Text = "cost"
+        '
+        'lblMegaCost
+        '
+        Me.lblMegaCost.AutoSize = True
+        Me.lblMegaCost.Location = New System.Drawing.Point(289, 164)
+        Me.lblMegaCost.Name = "lblMegaCost"
+        Me.lblMegaCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblMegaCost.TabIndex = 61
+        Me.lblMegaCost.Text = "cost"
+        '
+        'lblMeggaPepperoniCost
+        '
+        Me.lblMeggaPepperoniCost.AutoSize = True
+        Me.lblMeggaPepperoniCost.Location = New System.Drawing.Point(289, 232)
+        Me.lblMeggaPepperoniCost.Name = "lblMeggaPepperoniCost"
+        Me.lblMeggaPepperoniCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblMeggaPepperoniCost.TabIndex = 62
+        Me.lblMeggaPepperoniCost.Text = "cost"
+        '
+        'lblOliveCost
+        '
+        Me.lblOliveCost.AutoSize = True
+        Me.lblOliveCost.Location = New System.Drawing.Point(289, 308)
+        Me.lblOliveCost.Name = "lblOliveCost"
+        Me.lblOliveCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblOliveCost.TabIndex = 63
+        Me.lblOliveCost.Text = "cost"
+        '
+        'lblNewYorkerCost
+        '
+        Me.lblNewYorkerCost.AutoSize = True
+        Me.lblNewYorkerCost.Location = New System.Drawing.Point(289, 392)
+        Me.lblNewYorkerCost.Name = "lblNewYorkerCost"
+        Me.lblNewYorkerCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblNewYorkerCost.TabIndex = 64
+        Me.lblNewYorkerCost.Text = "cost"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblNewYorkerCost)
+        Me.Controls.Add(Me.lblOliveCost)
+        Me.Controls.Add(Me.lblMeggaPepperoniCost)
+        Me.Controls.Add(Me.lblMegaCost)
+        Me.Controls.Add(Me.lblParmesanCost)
+        Me.Controls.Add(Me.lblSupremeCost)
+        Me.Controls.Add(Me.lblMeatCost)
+        Me.Controls.Add(Me.lblPepperoniCost)
+        Me.Controls.Add(Me.lblHawaiianCost)
+        Me.Controls.Add(Me.lblBurgerCost)
+        Me.Controls.Add(Me.lblBeefCost)
+        Me.Controls.Add(Me.lblCheeseCost)
         Me.Controls.Add(Me.lblPizzas)
         Me.Controls.Add(Me.lblPizza12)
         Me.Controls.Add(Me.lblPizza11)
@@ -681,4 +813,16 @@ Partial Class Form3
     Friend WithEvents lblPizza11 As Label
     Friend WithEvents lblPizza12 As Label
     Friend WithEvents lblPizzas As Label
+    Friend WithEvents lblCheeseCost As Label
+    Friend WithEvents lblBeefCost As Label
+    Friend WithEvents lblBurgerCost As Label
+    Friend WithEvents lblHawaiianCost As Label
+    Friend WithEvents lblPepperoniCost As Label
+    Friend WithEvents lblMeatCost As Label
+    Friend WithEvents lblSupremeCost As Label
+    Friend WithEvents lblParmesanCost As Label
+    Friend WithEvents lblMegaCost As Label
+    Friend WithEvents lblMeggaPepperoniCost As Label
+    Friend WithEvents lblOliveCost As Label
+    Friend WithEvents lblNewYorkerCost As Label
 End Class

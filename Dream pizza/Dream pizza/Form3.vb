@@ -45,13 +45,13 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCheese.SelectedIndexChanged
-        pizza(1, 1) = Val(cmbCheese.Text).ToString("C") * pizza(0, 1)
-        lblPizzas.Text = pizza(1, 1) & pizza(1, 2)
+        pizza(1, 1) = Val(cmbCheese.Text) * REGULARPRICE
+        lblCheeseCost.Text = pizza(1, 1).ToString("C")
 
     End Sub
 
     Private Sub cmbBeef_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBeef.SelectedIndexChanged
         pizza(1, 2) = Val(cmbBeef.Text) * pizza(0, 2)
-        lblPizzas.Text = pizza(1, 1) & pizza(1, 2)
+        lblPizzas.Text = pizza(1, 1) & " " & pizza(1, 2)
     End Sub
 End Class
