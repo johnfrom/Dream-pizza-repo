@@ -62,18 +62,6 @@ Partial Class Form3
         Me.btnGoBack = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.lblTotal = New System.Windows.Forms.Label()
-        Me.lblPizza1 = New System.Windows.Forms.Label()
-        Me.lblPizza2 = New System.Windows.Forms.Label()
-        Me.lblPizza3 = New System.Windows.Forms.Label()
-        Me.lblPizza4 = New System.Windows.Forms.Label()
-        Me.lblPizza5 = New System.Windows.Forms.Label()
-        Me.lblPizza6 = New System.Windows.Forms.Label()
-        Me.lblPizza7 = New System.Windows.Forms.Label()
-        Me.lblPizza8 = New System.Windows.Forms.Label()
-        Me.lblPizza9 = New System.Windows.Forms.Label()
-        Me.lblPizza10 = New System.Windows.Forms.Label()
-        Me.lblPizza11 = New System.Windows.Forms.Label()
-        Me.lblPizza12 = New System.Windows.Forms.Label()
         Me.lblPizzas = New System.Windows.Forms.Label()
         Me.lblCheeseCost = New System.Windows.Forms.Label()
         Me.lblBeefCost = New System.Windows.Forms.Label()
@@ -427,7 +415,7 @@ Partial Class Form3
         '
         'lblOrder
         '
-        Me.lblOrder.Location = New System.Drawing.Point(401, 20)
+        Me.lblOrder.Location = New System.Drawing.Point(397, 21)
         Me.lblOrder.Name = "lblOrder"
         Me.lblOrder.Size = New System.Drawing.Size(315, 58)
         Me.lblOrder.TabIndex = 36
@@ -459,114 +447,6 @@ Partial Class Form3
         Me.lblTotal.TabIndex = 39
         Me.lblTotal.Text = "total"
         '
-        'lblPizza1
-        '
-        Me.lblPizza1.AutoSize = True
-        Me.lblPizza1.Location = New System.Drawing.Point(743, 190)
-        Me.lblPizza1.Name = "lblPizza1"
-        Me.lblPizza1.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza1.TabIndex = 40
-        Me.lblPizza1.Text = "Label25"
-        '
-        'lblPizza2
-        '
-        Me.lblPizza2.AutoSize = True
-        Me.lblPizza2.Location = New System.Drawing.Point(743, 203)
-        Me.lblPizza2.Name = "lblPizza2"
-        Me.lblPizza2.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza2.TabIndex = 41
-        Me.lblPizza2.Text = "Label25"
-        '
-        'lblPizza3
-        '
-        Me.lblPizza3.AutoSize = True
-        Me.lblPizza3.Location = New System.Drawing.Point(743, 216)
-        Me.lblPizza3.Name = "lblPizza3"
-        Me.lblPizza3.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza3.TabIndex = 42
-        Me.lblPizza3.Text = "Label25"
-        '
-        'lblPizza4
-        '
-        Me.lblPizza4.AutoSize = True
-        Me.lblPizza4.Location = New System.Drawing.Point(743, 229)
-        Me.lblPizza4.Name = "lblPizza4"
-        Me.lblPizza4.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza4.TabIndex = 43
-        Me.lblPizza4.Text = "Label25"
-        '
-        'lblPizza5
-        '
-        Me.lblPizza5.AutoSize = True
-        Me.lblPizza5.Location = New System.Drawing.Point(743, 242)
-        Me.lblPizza5.Name = "lblPizza5"
-        Me.lblPizza5.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza5.TabIndex = 44
-        Me.lblPizza5.Text = "Label25"
-        '
-        'lblPizza6
-        '
-        Me.lblPizza6.AutoSize = True
-        Me.lblPizza6.Location = New System.Drawing.Point(743, 256)
-        Me.lblPizza6.Name = "lblPizza6"
-        Me.lblPizza6.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza6.TabIndex = 45
-        Me.lblPizza6.Text = "Label25"
-        '
-        'lblPizza7
-        '
-        Me.lblPizza7.AutoSize = True
-        Me.lblPizza7.Location = New System.Drawing.Point(743, 269)
-        Me.lblPizza7.Name = "lblPizza7"
-        Me.lblPizza7.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza7.TabIndex = 46
-        Me.lblPizza7.Text = "Label25"
-        '
-        'lblPizza8
-        '
-        Me.lblPizza8.AutoSize = True
-        Me.lblPizza8.Location = New System.Drawing.Point(743, 282)
-        Me.lblPizza8.Name = "lblPizza8"
-        Me.lblPizza8.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza8.TabIndex = 47
-        Me.lblPizza8.Text = "Label25"
-        '
-        'lblPizza9
-        '
-        Me.lblPizza9.AutoSize = True
-        Me.lblPizza9.Location = New System.Drawing.Point(743, 295)
-        Me.lblPizza9.Name = "lblPizza9"
-        Me.lblPizza9.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza9.TabIndex = 48
-        Me.lblPizza9.Text = "Label25"
-        '
-        'lblPizza10
-        '
-        Me.lblPizza10.AutoSize = True
-        Me.lblPizza10.Location = New System.Drawing.Point(743, 308)
-        Me.lblPizza10.Name = "lblPizza10"
-        Me.lblPizza10.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza10.TabIndex = 49
-        Me.lblPizza10.Text = "Label25"
-        '
-        'lblPizza11
-        '
-        Me.lblPizza11.AutoSize = True
-        Me.lblPizza11.Location = New System.Drawing.Point(743, 321)
-        Me.lblPizza11.Name = "lblPizza11"
-        Me.lblPizza11.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza11.TabIndex = 50
-        Me.lblPizza11.Text = "Label25"
-        '
-        'lblPizza12
-        '
-        Me.lblPizza12.AutoSize = True
-        Me.lblPizza12.Location = New System.Drawing.Point(743, 334)
-        Me.lblPizza12.Name = "lblPizza12"
-        Me.lblPizza12.Size = New System.Drawing.Size(45, 13)
-        Me.lblPizza12.TabIndex = 51
-        Me.lblPizza12.Text = "Label25"
-        '
         'lblPizzas
         '
         Me.lblPizzas.Location = New System.Drawing.Point(397, 90)
@@ -580,108 +460,108 @@ Partial Class Form3
         Me.lblCheeseCost.AutoSize = True
         Me.lblCheeseCost.Location = New System.Drawing.Point(127, 38)
         Me.lblCheeseCost.Name = "lblCheeseCost"
-        Me.lblCheeseCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblCheeseCost.Size = New System.Drawing.Size(34, 13)
         Me.lblCheeseCost.TabIndex = 53
-        Me.lblCheeseCost.Text = "cost"
+        Me.lblCheeseCost.Text = "$0.00"
         '
         'lblBeefCost
         '
         Me.lblBeefCost.AutoSize = True
         Me.lblBeefCost.Location = New System.Drawing.Point(127, 97)
         Me.lblBeefCost.Name = "lblBeefCost"
-        Me.lblBeefCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblBeefCost.Size = New System.Drawing.Size(34, 13)
         Me.lblBeefCost.TabIndex = 54
-        Me.lblBeefCost.Text = "cost"
+        Me.lblBeefCost.Text = "$0.00"
         '
         'lblBurgerCost
         '
         Me.lblBurgerCost.AutoSize = True
         Me.lblBurgerCost.Location = New System.Drawing.Point(127, 164)
         Me.lblBurgerCost.Name = "lblBurgerCost"
-        Me.lblBurgerCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblBurgerCost.Size = New System.Drawing.Size(34, 13)
         Me.lblBurgerCost.TabIndex = 55
-        Me.lblBurgerCost.Text = "cost"
+        Me.lblBurgerCost.Text = "$0.00"
         '
         'lblHawaiianCost
         '
         Me.lblHawaiianCost.AutoSize = True
         Me.lblHawaiianCost.Location = New System.Drawing.Point(127, 232)
         Me.lblHawaiianCost.Name = "lblHawaiianCost"
-        Me.lblHawaiianCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblHawaiianCost.Size = New System.Drawing.Size(34, 13)
         Me.lblHawaiianCost.TabIndex = 56
-        Me.lblHawaiianCost.Text = "cost"
+        Me.lblHawaiianCost.Text = "$0.00"
         '
         'lblPepperoniCost
         '
         Me.lblPepperoniCost.AutoSize = True
         Me.lblPepperoniCost.Location = New System.Drawing.Point(127, 307)
         Me.lblPepperoniCost.Name = "lblPepperoniCost"
-        Me.lblPepperoniCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblPepperoniCost.Size = New System.Drawing.Size(34, 13)
         Me.lblPepperoniCost.TabIndex = 57
-        Me.lblPepperoniCost.Text = "cost"
+        Me.lblPepperoniCost.Text = "$0.00"
         '
         'lblMeatCost
         '
         Me.lblMeatCost.AutoSize = True
         Me.lblMeatCost.Location = New System.Drawing.Point(127, 392)
         Me.lblMeatCost.Name = "lblMeatCost"
-        Me.lblMeatCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblMeatCost.Size = New System.Drawing.Size(34, 13)
         Me.lblMeatCost.TabIndex = 58
-        Me.lblMeatCost.Text = "cost"
+        Me.lblMeatCost.Text = "$0.00"
         '
         'lblSupremeCost
         '
         Me.lblSupremeCost.AutoSize = True
         Me.lblSupremeCost.Location = New System.Drawing.Point(289, 38)
         Me.lblSupremeCost.Name = "lblSupremeCost"
-        Me.lblSupremeCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblSupremeCost.Size = New System.Drawing.Size(34, 13)
         Me.lblSupremeCost.TabIndex = 59
-        Me.lblSupremeCost.Text = "cost"
+        Me.lblSupremeCost.Text = "$0.00"
         '
         'lblParmesanCost
         '
         Me.lblParmesanCost.AutoSize = True
         Me.lblParmesanCost.Location = New System.Drawing.Point(289, 97)
         Me.lblParmesanCost.Name = "lblParmesanCost"
-        Me.lblParmesanCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblParmesanCost.Size = New System.Drawing.Size(34, 13)
         Me.lblParmesanCost.TabIndex = 60
-        Me.lblParmesanCost.Text = "cost"
+        Me.lblParmesanCost.Text = "$0.00"
         '
         'lblMegaCost
         '
         Me.lblMegaCost.AutoSize = True
         Me.lblMegaCost.Location = New System.Drawing.Point(289, 164)
         Me.lblMegaCost.Name = "lblMegaCost"
-        Me.lblMegaCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblMegaCost.Size = New System.Drawing.Size(34, 13)
         Me.lblMegaCost.TabIndex = 61
-        Me.lblMegaCost.Text = "cost"
+        Me.lblMegaCost.Text = "$0.00"
         '
         'lblMeggaPepperoniCost
         '
         Me.lblMeggaPepperoniCost.AutoSize = True
         Me.lblMeggaPepperoniCost.Location = New System.Drawing.Point(289, 232)
         Me.lblMeggaPepperoniCost.Name = "lblMeggaPepperoniCost"
-        Me.lblMeggaPepperoniCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblMeggaPepperoniCost.Size = New System.Drawing.Size(34, 13)
         Me.lblMeggaPepperoniCost.TabIndex = 62
-        Me.lblMeggaPepperoniCost.Text = "cost"
+        Me.lblMeggaPepperoniCost.Text = "$0.00"
         '
         'lblOliveCost
         '
         Me.lblOliveCost.AutoSize = True
         Me.lblOliveCost.Location = New System.Drawing.Point(289, 308)
         Me.lblOliveCost.Name = "lblOliveCost"
-        Me.lblOliveCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblOliveCost.Size = New System.Drawing.Size(34, 13)
         Me.lblOliveCost.TabIndex = 63
-        Me.lblOliveCost.Text = "cost"
+        Me.lblOliveCost.Text = "$0.00"
         '
         'lblNewYorkerCost
         '
         Me.lblNewYorkerCost.AutoSize = True
         Me.lblNewYorkerCost.Location = New System.Drawing.Point(289, 392)
         Me.lblNewYorkerCost.Name = "lblNewYorkerCost"
-        Me.lblNewYorkerCost.Size = New System.Drawing.Size(27, 13)
+        Me.lblNewYorkerCost.Size = New System.Drawing.Size(34, 13)
         Me.lblNewYorkerCost.TabIndex = 64
-        Me.lblNewYorkerCost.Text = "cost"
+        Me.lblNewYorkerCost.Text = "$0.00"
         '
         'Form3
         '
@@ -701,18 +581,6 @@ Partial Class Form3
         Me.Controls.Add(Me.lblBeefCost)
         Me.Controls.Add(Me.lblCheeseCost)
         Me.Controls.Add(Me.lblPizzas)
-        Me.Controls.Add(Me.lblPizza12)
-        Me.Controls.Add(Me.lblPizza11)
-        Me.Controls.Add(Me.lblPizza10)
-        Me.Controls.Add(Me.lblPizza9)
-        Me.Controls.Add(Me.lblPizza8)
-        Me.Controls.Add(Me.lblPizza7)
-        Me.Controls.Add(Me.lblPizza6)
-        Me.Controls.Add(Me.lblPizza5)
-        Me.Controls.Add(Me.lblPizza4)
-        Me.Controls.Add(Me.lblPizza3)
-        Me.Controls.Add(Me.lblPizza2)
-        Me.Controls.Add(Me.lblPizza1)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnGoBack)
@@ -800,18 +668,6 @@ Partial Class Form3
     Friend WithEvents btnGoBack As Button
     Friend WithEvents btnQuit As Button
     Friend WithEvents lblTotal As Label
-    Friend WithEvents lblPizza1 As Label
-    Friend WithEvents lblPizza2 As Label
-    Friend WithEvents lblPizza3 As Label
-    Friend WithEvents lblPizza4 As Label
-    Friend WithEvents lblPizza5 As Label
-    Friend WithEvents lblPizza6 As Label
-    Friend WithEvents lblPizza7 As Label
-    Friend WithEvents lblPizza8 As Label
-    Friend WithEvents lblPizza9 As Label
-    Friend WithEvents lblPizza10 As Label
-    Friend WithEvents lblPizza11 As Label
-    Friend WithEvents lblPizza12 As Label
     Friend WithEvents lblPizzas As Label
     Friend WithEvents lblCheeseCost As Label
     Friend WithEvents lblBeefCost As Label
