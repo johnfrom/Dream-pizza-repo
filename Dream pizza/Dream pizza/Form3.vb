@@ -1,5 +1,4 @@
 ﻿Public Class Form3
-    Dim amount As Integer
     Public totalammount As Decimal
     Dim pizza(1, 11) As Decimal
     Const REGULARPRICE As Decimal = 8.5 'makes the regular price 8.5
@@ -47,60 +46,135 @@ Delivery Address: " & Form2.address 'also display the address
     Private Sub cmbCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCheese.SelectedIndexChanged
         pizza(1, 1) = Val(cmbCheese.Text) * pizza(0, 1)
         lblCheeseCost.Text = pizza(1, 1).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
+
     End Sub
 
     Private Sub cmbBeef_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBeef.SelectedIndexChanged
         pizza(1, 2) = Val(cmbBeef.Text) * pizza(0, 2)
         lblBeefCost.Text = pizza(1, 2).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
+
     End Sub
 
     Private Sub cmbBurger_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBurger.SelectedIndexChanged
         pizza(1, 3) = Val(cmbBurger.Text) * pizza(0, 3)
         lblBurgerCost.Text = pizza(1, 3).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbHawaiian_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbHawaiian.SelectedIndexChanged
         pizza(1, 4) = Val(cmbHawaiian.Text) * pizza(0, 4)
         lblHawaiianCost.Text = pizza(1, 4).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbPepperoni_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbPepperoni.SelectedIndexChanged
         pizza(1, 5) = Val(cmbPepperoni.Text) * pizza(0, 5)
         lblPepperoniCost.Text = pizza(1, 5).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbMeat_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMeat.SelectedIndexChanged
         pizza(1, 6) = Val(cmbMeat.Text) * pizza(0, 6)
         lblMeatCost.Text = pizza(1, 6).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbSupreme_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbSupreme.SelectedIndexChanged
         pizza(1, 6) = Val(cmbSupreme.Text) * pizza(0, 6)
         lblSupremeCost.Text = pizza(1, 6).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbParmesean_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbParmesean.SelectedIndexChanged
         pizza(1, 7) = Val(cmbParmesean.Text) * pizza(0, 7)
         lblParmesanCost.Text = pizza(1, 7).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbMegaMeat_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMegaMeat.SelectedIndexChanged
         pizza(1, 8) = Val(cmbMegaMeat.Text) * pizza(0, 8)
         lblMegaCost.Text = pizza(1, 8).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbMegaPepperoni_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMegaPepperoni.SelectedIndexChanged
         pizza(1, 9) = Val(cmbMegaPepperoni.Text) * pizza(0, 9)
         lblMeggaPepperoniCost.Text = pizza(1, 9).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbOlive_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbOlive.SelectedIndexChanged
         pizza(1, 10) = Val(cmbOlive.Text) * pizza(0, 10)
         lblOliveCost.Text = pizza(1, 10).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
     End Sub
 
     Private Sub cmbNewYorkCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbNewYorkCheese.SelectedIndexChanged
         pizza(1, 11) = Val(cmbNewYorkCheese.Text) * pizza(0, 11)
         lblNewYorkerCost.Text = pizza(1, 11).ToString("C")
+
+        totalammount = Val(0)
+        For price = 0 To 11
+            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            lblTotal.Text = totalammount.ToString("C")
+        Next
+
     End Sub
 End Class

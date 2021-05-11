@@ -62,7 +62,6 @@ Partial Class Form3
         Me.btnGoBack = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.lblTotal = New System.Windows.Forms.Label()
-        Me.lblPizzas = New System.Windows.Forms.Label()
         Me.lblCheeseCost = New System.Windows.Forms.Label()
         Me.lblBeefCost = New System.Windows.Forms.Label()
         Me.lblBurgerCost = New System.Windows.Forms.Label()
@@ -441,19 +440,11 @@ Partial Class Form3
         '
         'lblTotal
         '
-        Me.lblTotal.Location = New System.Drawing.Point(720, 21)
+        Me.lblTotal.Location = New System.Drawing.Point(397, 97)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(68, 89)
+        Me.lblTotal.Size = New System.Drawing.Size(297, 228)
         Me.lblTotal.TabIndex = 39
         Me.lblTotal.Text = "total"
-        '
-        'lblPizzas
-        '
-        Me.lblPizzas.Location = New System.Drawing.Point(397, 90)
-        Me.lblPizzas.Name = "lblPizzas"
-        Me.lblPizzas.Size = New System.Drawing.Size(275, 235)
-        Me.lblPizzas.TabIndex = 52
-        Me.lblPizzas.Text = "Label25"
         '
         'lblCheeseCost
         '
@@ -580,7 +571,6 @@ Partial Class Form3
         Me.Controls.Add(Me.lblBurgerCost)
         Me.Controls.Add(Me.lblBeefCost)
         Me.Controls.Add(Me.lblCheeseCost)
-        Me.Controls.Add(Me.lblPizzas)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnGoBack)
@@ -668,7 +658,6 @@ Partial Class Form3
     Friend WithEvents btnGoBack As Button
     Friend WithEvents btnQuit As Button
     Friend WithEvents lblTotal As Label
-    Friend WithEvents lblPizzas As Label
     Friend WithEvents lblCheeseCost As Label
     Friend WithEvents lblBeefCost As Label
     Friend WithEvents lblBurgerCost As Label
