@@ -30,7 +30,7 @@ Partial Class Form2
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.chkDelivery = New System.Windows.Forms.CheckBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnContinue = New System.Windows.Forms.Button()
         Me.txtPhone = New System.Windows.Forms.MaskedTextBox()
         Me.txtAddress = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -110,14 +110,14 @@ Partial Class Form2
         Me.chkDelivery.Text = "($3 fee)"
         Me.chkDelivery.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnContinue
         '
-        Me.Button1.Location = New System.Drawing.Point(600, 330)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 72)
-        Me.Button1.TabIndex = 22
-        Me.Button1.Text = "Continue"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnContinue.Location = New System.Drawing.Point(600, 330)
+        Me.btnContinue.Name = "btnContinue"
+        Me.btnContinue.Size = New System.Drawing.Size(165, 72)
+        Me.btnContinue.TabIndex = 22
+        Me.btnContinue.Text = "Continue"
+        Me.btnContinue.UseVisualStyleBackColor = True
         '
         'txtPhone
         '
@@ -141,7 +141,7 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.txtPhone)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnContinue)
         Me.Controls.Add(Me.chkDelivery)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtAddress)
@@ -166,7 +166,7 @@ Partial Class Form2
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents chkDelivery As CheckBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnContinue As Button
     Friend WithEvents txtPhone As MaskedTextBox
     Friend WithEvents txtAddress As TextBox
 End Class

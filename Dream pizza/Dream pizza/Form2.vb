@@ -4,11 +4,18 @@
     Public address As String
     Public delivery As String
     'defines all customer information as public so it can be used on form3 and as string becuase it is text
-    Public Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Public Sub Button1_Click(sender As Object, e As EventArgs) Handles btnContinue.Click
 
+        Form3.totalammount = Val(0)
         If chkDelivery.Checked = True Then
-            Form3.totalammount = Val(3).ToString("C")  'adds 3 dollars to the total cost if the delivery text box is checked
+            Form3.totalammount = Form3.totalammount + Val(3)
+        Else
+            Form3.totalammount = Val(0).ToString("C")
         End If
+        For price = 0 To 11
+            Form3.totalammount = Form3.totalammount + Form3.pizza(1, price)
+            Form3.lblTotal.Text = Form3.totalammount.ToString("C")
+        Next
 
         If txtName.Text = "" Then
             MessageBox.Show("you need to enter your name")  'checks if a name was entered
@@ -22,6 +29,7 @@
             address = txtAddress.Text
             Form3.Show()   'apply the text from the text boxes to the matching variables and show form3
         End If
+
 
     End Sub
 

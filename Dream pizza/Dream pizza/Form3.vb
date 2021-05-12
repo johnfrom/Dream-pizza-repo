@@ -1,6 +1,6 @@
 ﻿Public Class Form3
     Public totalammount As Decimal
-    Dim pizza(1, 11) As Decimal
+    Public pizza(1, 11) As Decimal
     Const REGULARPRICE As Decimal = 8.5 'makes the regular price 8.5
     Const GOURMETPRICE As Decimal = REGULARPRICE + 5 'makes the gourmet price the regular price plus 5
 
@@ -33,7 +33,7 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
-        Close()  'closes form 3
+        Hide()  'hides form 3
         Form2.Show() 'opens form 2
     End Sub
 
@@ -48,8 +48,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblCheeseCost.Text = pizza(1, 1).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
 
@@ -60,8 +63,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblBeefCost.Text = pizza(1, 2).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
 
@@ -72,8 +78,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblBurgerCost.Text = pizza(1, 3).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -83,8 +92,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblHawaiianCost.Text = pizza(1, 4).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -94,8 +106,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblPepperoniCost.Text = pizza(1, 5).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -105,8 +120,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblMeatCost.Text = pizza(1, 6).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -116,8 +134,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblSupremeCost.Text = pizza(1, 6).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -127,8 +148,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblParmesanCost.Text = pizza(1, 7).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -138,8 +162,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblMegaCost.Text = pizza(1, 8).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -149,8 +176,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblMeggaPepperoniCost.Text = pizza(1, 9).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -160,8 +190,11 @@ Delivery Address: " & Form2.address 'also display the address
         lblOliveCost.Text = pizza(1, 10).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
     End Sub
@@ -171,10 +204,14 @@ Delivery Address: " & Form2.address 'also display the address
         lblNewYorkerCost.Text = pizza(1, 11).ToString("C")
 
         totalammount = Val(0)
+        If Form2.chkDelivery.Checked = True Then
+            totalammount = totalammount + Val(3).ToString("C")
+        End If
         For price = 0 To 11
-            totalammount = totalammount + (pizza(0, price) * pizza(1, price)) / pizza(0, price)
+            totalammount = totalammount + pizza(1, price)
             lblTotal.Text = totalammount.ToString("C")
         Next
+
 
     End Sub
 End Class
