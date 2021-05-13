@@ -74,6 +74,7 @@ Partial Class Form3
         Me.lblMeggaPepperoniCost = New System.Windows.Forms.Label()
         Me.lblOliveCost = New System.Windows.Forms.Label()
         Me.lblNewYorkerCost = New System.Windows.Forms.Label()
+        Me.btnSummary = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'cmbCheese
@@ -554,11 +555,21 @@ Partial Class Form3
         Me.lblNewYorkerCost.TabIndex = 64
         Me.lblNewYorkerCost.Text = "$0.00"
         '
+        'btnSummary
+        '
+        Me.btnSummary.Location = New System.Drawing.Point(588, 265)
+        Me.btnSummary.Name = "btnSummary"
+        Me.btnSummary.Size = New System.Drawing.Size(169, 61)
+        Me.btnSummary.TabIndex = 65
+        Me.btnSummary.Text = "Summary"
+        Me.btnSummary.UseVisualStyleBackColor = True
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnSummary)
         Me.Controls.Add(Me.lblNewYorkerCost)
         Me.Controls.Add(Me.lblOliveCost)
         Me.Controls.Add(Me.lblMeggaPepperoniCost)
@@ -670,4 +681,5 @@ Partial Class Form3
     Friend WithEvents lblMeggaPepperoniCost As Label
     Friend WithEvents lblOliveCost As Label
     Friend WithEvents lblNewYorkerCost As Label
+    Friend WithEvents btnSummary As Button
 End Class

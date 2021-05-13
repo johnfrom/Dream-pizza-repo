@@ -214,4 +214,9 @@ Delivery Address: " & Form2.address 'also display the address
 
 
     End Sub
+
+    Private Sub btnSummary_Click(sender As Object, e As EventArgs) Handles btnSummary.Click
+        Hide() 'hides the current form
+        Form4.Show() 'shows the fourth form
+    End Sub
 End Class
