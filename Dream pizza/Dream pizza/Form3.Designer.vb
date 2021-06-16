@@ -419,11 +419,11 @@ Partial Class Form3
         Me.lblOrder.Name = "lblOrder"
         Me.lblOrder.Size = New System.Drawing.Size(315, 58)
         Me.lblOrder.TabIndex = 36
-        Me.lblOrder.Text = "Order"
+        Me.lblOrder.Text = "Customer Info"
         '
         'btnGoBack
         '
-        Me.btnGoBack.Location = New System.Drawing.Point(370, 349)
+        Me.btnGoBack.Location = New System.Drawing.Point(588, 184)
         Me.btnGoBack.Name = "btnGoBack"
         Me.btnGoBack.Size = New System.Drawing.Size(169, 61)
         Me.btnGoBack.TabIndex = 37
@@ -441,11 +441,11 @@ Partial Class Form3
         '
         'lblTotal
         '
-        Me.lblTotal.Location = New System.Drawing.Point(397, 97)
+        Me.lblTotal.Location = New System.Drawing.Point(339, 392)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(297, 228)
+        Me.lblTotal.Size = New System.Drawing.Size(203, 18)
         Me.lblTotal.TabIndex = 39
-        Me.lblTotal.Text = "total"
+        Me.lblTotal.Text = "Total"
         '
         'lblCheeseCost
         '
@@ -569,6 +569,7 @@ Partial Class Form3
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnGoBack)
         Me.Controls.Add(Me.btnSummary)
         Me.Controls.Add(Me.lblNewYorkerCost)
         Me.Controls.Add(Me.lblOliveCost)
@@ -584,7 +585,6 @@ Partial Class Form3
         Me.Controls.Add(Me.lblCheeseCost)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.btnGoBack)
         Me.Controls.Add(Me.lblOrder)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)

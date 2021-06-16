@@ -33,7 +33,7 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
-        Hide()  'hides form 3
+        Close()  'closes form 3
         Form2.Show() 'opens form 2
     End Sub
 
@@ -53,7 +53,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
 
     End Sub
@@ -68,7 +68,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
 
     End Sub
@@ -83,7 +83,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -97,7 +97,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -111,7 +111,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -125,7 +125,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -139,7 +139,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -153,7 +153,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -167,7 +167,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -181,7 +181,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -195,7 +195,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
     End Sub
 
@@ -209,7 +209,7 @@ Delivery Address: " & Form2.address 'also display the address
         End If
         For price = 0 To 11
             totalammount = totalammount + pizza(1, price)
-            lblTotal.Text = totalammount.ToString("C")
+            lblTotal.Text = "Total Price: " & totalammount.ToString("C")
         Next
 
 
@@ -218,5 +218,9 @@ Delivery Address: " & Form2.address 'also display the address
     Private Sub btnSummary_Click(sender As Object, e As EventArgs) Handles btnSummary.Click
         Hide() 'hides the current form
         Form4.Show() 'shows the fourth form
+    End Sub
+
+    Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
+
     End Sub
 End Class
