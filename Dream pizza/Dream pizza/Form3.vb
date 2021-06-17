@@ -216,8 +216,11 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub btnSummary_Click(sender As Object, e As EventArgs) Handles btnSummary.Click
-        Hide() 'hides the current form
-        Form4.Show() 'shows the fourth form
+        Form4.lblSummary1.Text = "Customer Details" & vbCrLf
+        Form4.lblSummary1.Text = Form4.lblSummary1.Text & Form3.
+        For x = 0 To 11
+            If pizza Then
+        Next
     End Sub
 
     Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
