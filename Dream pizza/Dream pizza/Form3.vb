@@ -1,6 +1,6 @@
 ﻿Public Class Form3
     Public totalammount As Decimal
-    Public pizza(1, 11) As Decimal
+    Public pizza(2, 11) As Decimal
     Const REGULARPRICE As Decimal = 8.5 'makes the regular price 8.5
     Const GOURMETPRICE As Decimal = REGULARPRICE + 5 'makes the gourmet price the regular price plus 5
 
@@ -216,11 +216,23 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub btnSummary_Click(sender As Object, e As EventArgs) Handles btnSummary.Click
-        Form4.lblSummary1.Text = "Customer Details" & vbCrLf
-        Form4.lblSummary1.Text = Form4.lblSummary1.Text & Form3.
+        Form4.lblSummaryCustomer.Text = "Customer Details" & vbCrLf
+        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & Form2.names & vbCrLf
+        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & Form2.address & vbCrLf & Form2.phone
+
+        Form4.lblSummary1.Text = "Pizza" & vbCrLf
+        Form4.lblSummary2.Text = "Quantity" & vbCrLf
+        Form4.lblSummary3.Text = "Cost" & vbCrLf
+
         For x = 0 To 11
-            If pizza Then
+            If pizza(1, x) > 0 Then
+                Dim tmptotal As Decimal = Val(pizza(1, x)) * Val(pizza(2, x))
+                Form4.lblSummary1.Text = Form4.lblSummary1.Text & pizza(0, x) & vbCrLf
+                Form4.lblSummary2.Text = Form4.lblSummary2.Text & pizza(2, x) & vbCrLf
+                Form4.lblSummary3.Text = Form4.lblSummary3.Text & tmptotal.ToString("C") & vbCrLf
+            End If
         Next
+        Form4.Show()
     End Sub
 
     Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click

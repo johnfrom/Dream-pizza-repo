@@ -26,11 +26,12 @@ Partial Class Form4
         Me.btnSummaryBack = New System.Windows.Forms.Button()
         Me.lblSummary2 = New System.Windows.Forms.Label()
         Me.lblSummary3 = New System.Windows.Forms.Label()
+        Me.lblSummaryCustomer = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblSummary1
         '
-        Me.lblSummary1.Location = New System.Drawing.Point(73, 44)
+        Me.lblSummary1.Location = New System.Drawing.Point(160, 44)
         Me.lblSummary1.Name = "lblSummary1"
         Me.lblSummary1.Size = New System.Drawing.Size(209, 303)
         Me.lblSummary1.TabIndex = 0
@@ -47,7 +48,7 @@ Partial Class Form4
         '
         'lblSummary2
         '
-        Me.lblSummary2.Location = New System.Drawing.Point(303, 44)
+        Me.lblSummary2.Location = New System.Drawing.Point(375, 44)
         Me.lblSummary2.Name = "lblSummary2"
         Me.lblSummary2.Size = New System.Drawing.Size(209, 303)
         Me.lblSummary2.TabIndex = 39
@@ -55,17 +56,26 @@ Partial Class Form4
         '
         'lblSummary3
         '
-        Me.lblSummary3.Location = New System.Drawing.Point(518, 44)
+        Me.lblSummary3.Location = New System.Drawing.Point(590, 44)
         Me.lblSummary3.Name = "lblSummary3"
         Me.lblSummary3.Size = New System.Drawing.Size(209, 303)
         Me.lblSummary3.TabIndex = 40
         Me.lblSummary3.Text = "summary"
+        '
+        'lblSummaryCustomer
+        '
+        Me.lblSummaryCustomer.Location = New System.Drawing.Point(12, 44)
+        Me.lblSummaryCustomer.Name = "lblSummaryCustomer"
+        Me.lblSummaryCustomer.Size = New System.Drawing.Size(129, 286)
+        Me.lblSummaryCustomer.TabIndex = 41
+        Me.lblSummaryCustomer.Text = "summary"
         '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblSummaryCustomer)
         Me.Controls.Add(Me.lblSummary3)
         Me.Controls.Add(Me.lblSummary2)
         Me.Controls.Add(Me.btnSummaryBack)
@@ -80,4 +90,5 @@ Partial Class Form4
     Friend WithEvents btnSummaryBack As Button
     Friend WithEvents lblSummary2 As Label
     Friend WithEvents lblSummary3 As Label
+    Friend WithEvents lblSummaryCustomer As Label
 End Class
