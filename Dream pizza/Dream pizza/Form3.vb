@@ -1,12 +1,27 @@
 ﻿Public Class Form3
     Public totalammount As Decimal
     Public pizza(2, 11) As Decimal
+    Public pizzanames(0, 11) As String
     Const REGULARPRICE As Decimal = 8.5 'makes the regular price 8.5
     Const GOURMETPRICE As Decimal = REGULARPRICE + 5 'makes the gourmet price the regular price plus 5
 
 
 
     Public Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        pizzanames(0, 0) = "Cheese"
+        pizzanames(0, 1) = "Beef"
+        pizzanames(0, 2) = "Burger"
+        pizzanames(0, 3) = "Hawaiian"
+        pizzanames(0, 4) = "Pepperoni"
+        pizzanames(0, 5) = "Meat"
+        pizzanames(0, 6) = "Supreme"
+        pizzanames(0, 7) = "Parmesan"
+        pizzanames(0, 8) = "Mega Meat"
+        pizzanames(0, 9) = "Mega Pepperoni"
+        pizzanames(0, 10) = "Olive"
+        pizzanames(0, 11) = "New Yorker Cheese"
+
 
         For p = 0 To 6
             pizza(0, p) = REGULARPRICE  'makes the first 7 pizzas the regular price
@@ -44,8 +59,9 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCheese.SelectedIndexChanged
-        pizza(1, 1) = Val(cmbCheese.Text) * pizza(0, 1)
-        lblCheeseCost.Text = pizza(1, 1).ToString("C")
+        pizza(2, 0) = Val(cmbCheese.Text)
+        pizza(1, 0) = pizza(2, 0) * pizza(0, 0)
+        lblCheeseCost.Text = pizza(1, 0).ToString("C")
 
         totalammount = Val(0)
         If Form2.chkDelivery.Checked = True Then
@@ -59,8 +75,9 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbBeef_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBeef.SelectedIndexChanged
-        pizza(1, 2) = Val(cmbBeef.Text) * pizza(0, 2)
-        lblBeefCost.Text = pizza(1, 2).ToString("C")
+        pizza(2, 1) = Val(cmbBeef.Text)
+        pizza(1, 1) = pizza(2, 1) * pizza(0, 1)
+        lblBeefCost.Text = pizza(1, 1).ToString("C")
 
         totalammount = Val(0)
         If Form2.chkDelivery.Checked = True Then
@@ -74,8 +91,9 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbBurger_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBurger.SelectedIndexChanged
-        pizza(1, 3) = Val(cmbBurger.Text) * pizza(0, 3)
-        lblBurgerCost.Text = pizza(1, 3).ToString("C")
+        pizza(2, 2) = Val(cmbBurger.Text)
+        pizza(1, 2) = pizza(2, 2) * pizza(0, 2)
+        lblBurgerCost.Text = pizza(1, 2).ToString("C")
 
         totalammount = Val(0)
         If Form2.chkDelivery.Checked = True Then
@@ -88,8 +106,9 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbHawaiian_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbHawaiian.SelectedIndexChanged
-        pizza(1, 4) = Val(cmbHawaiian.Text) * pizza(0, 4)
-        lblHawaiianCost.Text = pizza(1, 4).ToString("C")
+        pizza(2, 3) = Val(cmbHawaiian.Text)
+        pizza(1, 3) = pizza(2, 3) * pizza(0, 3)
+        lblHawaiianCost.Text = pizza(1, 3).ToString("C")
 
         totalammount = Val(0)
         If Form2.chkDelivery.Checked = True Then
@@ -102,8 +121,9 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbPepperoni_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbPepperoni.SelectedIndexChanged
-        pizza(1, 5) = Val(cmbPepperoni.Text) * pizza(0, 5)
-        lblPepperoniCost.Text = pizza(1, 5).ToString("C")
+        pizza(2, 4) = Val(cmbPepperoni.Text)
+        pizza(1, 4) = pizza(2, 4) * pizza(0, 4)
+        lblPepperoniCost.Text = pizza(1, 4).ToString("C")
 
         totalammount = Val(0)
         If Form2.chkDelivery.Checked = True Then
@@ -116,8 +136,9 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbMeat_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMeat.SelectedIndexChanged
-        pizza(1, 6) = Val(cmbMeat.Text) * pizza(0, 6)
-        lblMeatCost.Text = pizza(1, 6).ToString("C")
+        pizza(2, 5) = Val(cmbMeat.Text)
+        pizza(1, 5) = pizza(2, 5) * pizza(0, 5)
+        lblMeatCost.Text = pizza(1, 5).ToString("C")
 
         totalammount = Val(0)
         If Form2.chkDelivery.Checked = True Then
@@ -130,7 +151,8 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbSupreme_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbSupreme.SelectedIndexChanged
-        pizza(1, 6) = Val(cmbSupreme.Text) * pizza(0, 6)
+        pizza(2, 6) = Val(cmbSupreme.Text)
+        pizza(1, 6) = pizza(2, 6) * pizza(0, 6)
         lblSupremeCost.Text = pizza(1, 6).ToString("C")
 
         totalammount = Val(0)
@@ -144,7 +166,8 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbParmesean_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbParmesean.SelectedIndexChanged
-        pizza(1, 7) = Val(cmbParmesean.Text) * pizza(0, 7)
+        pizza(2, 7) = Val(cmbParmesean.Text)
+        pizza(1, 7) = pizza(2, 7) * pizza(0, 7)
         lblParmesanCost.Text = pizza(1, 7).ToString("C")
 
         totalammount = Val(0)
@@ -158,7 +181,8 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbMegaMeat_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMegaMeat.SelectedIndexChanged
-        pizza(1, 8) = Val(cmbMegaMeat.Text) * pizza(0, 8)
+        pizza(2, 8) = Val(cmbMegaMeat.Text)
+        pizza(1, 8) = pizza(2, 8) * pizza(0, 8)
         lblMegaCost.Text = pizza(1, 8).ToString("C")
 
         totalammount = Val(0)
@@ -172,7 +196,8 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbMegaPepperoni_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbMegaPepperoni.SelectedIndexChanged
-        pizza(1, 9) = Val(cmbMegaPepperoni.Text) * pizza(0, 9)
+        pizza(2, 9) = Val(cmbMegaPepperoni.Text)
+        pizza(1, 9) = pizza(2, 9) * pizza(0, 9)
         lblMeggaPepperoniCost.Text = pizza(1, 9).ToString("C")
 
         totalammount = Val(0)
@@ -186,7 +211,8 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbOlive_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbOlive.SelectedIndexChanged
-        pizza(1, 10) = Val(cmbOlive.Text) * pizza(0, 10)
+        pizza(2, 10) = Val(cmbOlive.Text)
+        pizza(1, 10) = pizza(2, 10) * pizza(0, 10)
         lblOliveCost.Text = pizza(1, 10).ToString("C")
 
         totalammount = Val(0)
@@ -200,7 +226,8 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub cmbNewYorkCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbNewYorkCheese.SelectedIndexChanged
-        pizza(1, 11) = Val(cmbNewYorkCheese.Text) * pizza(0, 11)
+        pizza(2, 11) = Val(cmbNewYorkCheese.Text)
+        pizza(1, 11) = pizza(2, 11) * pizza(0, 11)
         lblNewYorkerCost.Text = pizza(1, 11).ToString("C")
 
         totalammount = Val(0)
@@ -216,9 +243,12 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub btnSummary_Click(sender As Object, e As EventArgs) Handles btnSummary.Click
-        Form4.lblSummaryCustomer.Text = "Customer Details" & vbCrLf
-        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & Form2.names & vbCrLf
-        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & Form2.address & vbCrLf & Form2.phone
+        Form4.lblSummaryCustomer.Text = "Customer Details" & vbCrLf & vbCrLf
+        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Name: " & Form2.names & vbCrLf
+        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Phone: " & Form2.phone & vbCrLf
+        If Form2.chkDelivery.Checked = True Then
+            Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Address: " & Form2.address
+        End If
 
         Form4.lblSummary1.Text = "Pizza" & vbCrLf
         Form4.lblSummary2.Text = "Quantity" & vbCrLf
@@ -226,10 +256,9 @@ Delivery Address: " & Form2.address 'also display the address
 
         For x = 0 To 11
             If pizza(1, x) > 0 Then
-                Dim tmptotal As Decimal = Val(pizza(1, x)) * Val(pizza(2, x))
-                Form4.lblSummary1.Text = Form4.lblSummary1.Text & pizza(0, x) & vbCrLf
+                Form4.lblSummary1.Text = Form4.lblSummary1.Text & pizzanames(0, x) & vbCrLf
                 Form4.lblSummary2.Text = Form4.lblSummary2.Text & pizza(2, x) & vbCrLf
-                Form4.lblSummary3.Text = Form4.lblSummary3.Text & tmptotal.ToString("C") & vbCrLf
+                Form4.lblSummary3.Text = Form4.lblSummary3.Text & pizza(1, x).ToString("C") & vbCrLf
             End If
         Next
         Form4.Show()
