@@ -21,6 +21,7 @@
         pizzanames(0, 9) = "Mega Pepperoni"
         pizzanames(0, 10) = "Olive"
         pizzanames(0, 11) = "New Yorker Cheese"
+        'puts all of the pizza names into an array that is used for the summary
 
 
         For p = 0 To 6
@@ -243,16 +244,16 @@ Delivery Address: " & Form2.address 'also display the address
     End Sub
 
     Private Sub btnSummary_Click(sender As Object, e As EventArgs) Handles btnSummary.Click
-        Form4.lblSummaryCustomer.Text = "Customer Details" & vbCrLf & vbCrLf
-        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Name: " & Form2.names & vbCrLf
-        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Phone: " & Form2.phone & vbCrLf
+        Form4.lblSummaryCustomer.Text = "Customer Details" & vbCrLf & vbCrLf  'adds the text "Customer Details" to the customer data label on Form4 and skips a line
+        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Name: " & Form2.names & vbCrLf 'adds a line showing the customers name
+        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Phone: " & Form2.phone & vbCrLf 'adds a line showing the customers phone number
         If Form2.chkDelivery.Checked = True Then
-            Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Address: " & Form2.address
+            Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Address: " & Form2.address 'if the delivery checkbox is checked in Form2 then a live showing the customers address will be shown
         End If
 
-        Form4.lblSummary1.Text = "Pizza" & vbCrLf
-        Form4.lblSummary2.Text = "Quantity" & vbCrLf
-        Form4.lblSummary3.Text = "Cost" & vbCrLf
+        Form4.lblSummary1.Text = "Pizza" & vbCrLf & vbCrLf '
+        Form4.lblSummary2.Text = "Quantity" & vbCrLf & vbCrLf
+        Form4.lblSummary3.Text = "Cost" & vbCrLf & vbCrLf
 
         For x = 0 To 11
             If pizza(1, x) > 0 Then

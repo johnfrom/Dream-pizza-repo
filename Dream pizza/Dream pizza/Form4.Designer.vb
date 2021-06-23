@@ -31,9 +31,9 @@ Partial Class Form4
         '
         'lblSummary1
         '
-        Me.lblSummary1.Location = New System.Drawing.Point(160, 44)
+        Me.lblSummary1.Location = New System.Drawing.Point(241, 44)
         Me.lblSummary1.Name = "lblSummary1"
-        Me.lblSummary1.Size = New System.Drawing.Size(209, 303)
+        Me.lblSummary1.Size = New System.Drawing.Size(157, 303)
         Me.lblSummary1.TabIndex = 0
         Me.lblSummary1.Text = "summary"
         '
@@ -48,17 +48,17 @@ Partial Class Form4
         '
         'lblSummary2
         '
-        Me.lblSummary2.Location = New System.Drawing.Point(375, 44)
+        Me.lblSummary2.Location = New System.Drawing.Point(404, 44)
         Me.lblSummary2.Name = "lblSummary2"
-        Me.lblSummary2.Size = New System.Drawing.Size(209, 303)
+        Me.lblSummary2.Size = New System.Drawing.Size(157, 303)
         Me.lblSummary2.TabIndex = 39
         Me.lblSummary2.Text = "summary"
         '
         'lblSummary3
         '
-        Me.lblSummary3.Location = New System.Drawing.Point(590, 44)
+        Me.lblSummary3.Location = New System.Drawing.Point(567, 44)
         Me.lblSummary3.Name = "lblSummary3"
-        Me.lblSummary3.Size = New System.Drawing.Size(209, 303)
+        Me.lblSummary3.Size = New System.Drawing.Size(157, 303)
         Me.lblSummary3.TabIndex = 40
         Me.lblSummary3.Text = "summary"
         '
