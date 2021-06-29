@@ -423,7 +423,7 @@ Partial Class Form3
         '
         'btnGoBack
         '
-        Me.btnGoBack.Location = New System.Drawing.Point(588, 184)
+        Me.btnGoBack.Location = New System.Drawing.Point(619, 310)
         Me.btnGoBack.Name = "btnGoBack"
         Me.btnGoBack.Size = New System.Drawing.Size(169, 61)
         Me.btnGoBack.TabIndex = 37
@@ -432,7 +432,7 @@ Partial Class Form3
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(588, 350)
+        Me.btnQuit.Location = New System.Drawing.Point(619, 377)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(169, 61)
         Me.btnQuit.TabIndex = 38
@@ -557,7 +557,7 @@ Partial Class Form3
         '
         'btnSummary
         '
-        Me.btnSummary.Location = New System.Drawing.Point(588, 265)
+        Me.btnSummary.Location = New System.Drawing.Point(619, 243)
         Me.btnSummary.Name = "btnSummary"
         Me.btnSummary.Size = New System.Drawing.Size(169, 61)
         Me.btnSummary.TabIndex = 65

@@ -251,17 +251,18 @@ Delivery Address: " & Form2.address 'also display the address
             Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Address: " & Form2.address 'if the delivery checkbox is checked in Form2 then a live showing the customers address will be shown
         End If
 
-        Form4.lblSummary1.Text = "Pizza" & vbCrLf & vbCrLf '
-        Form4.lblSummary2.Text = "Quantity" & vbCrLf & vbCrLf
-        Form4.lblSummary3.Text = "Cost" & vbCrLf & vbCrLf
+        Form4.lblSummaryPizzaNames.Text = "Pizza" & vbCrLf & vbCrLf 'Adds the title "Pizza" to the pizza names label and adds a gap
+        Form4.lblSummaryQuantity.Text = "Quantity" & vbCrLf & vbCrLf 'Adds the title "Quantity" to the pizza quantities label and adds a gap
+        Form4.lblSummaryPrice.Text = "Cost" & vbCrLf & vbCrLf 'Adds the title "Cost" to the pizza costs label and adds a gap
 
         For x = 0 To 11
             If pizza(1, x) > 0 Then
-                Form4.lblSummary1.Text = Form4.lblSummary1.Text & pizzanames(0, x) & vbCrLf
-                Form4.lblSummary2.Text = Form4.lblSummary2.Text & pizza(2, x) & vbCrLf
-                Form4.lblSummary3.Text = Form4.lblSummary3.Text & pizza(1, x).ToString("C") & vbCrLf
+                Form4.lblSummaryPizzaNames.Text = Form4.lblSummaryPizzaNames.Text & pizzanames(0, x) & vbCrLf
+                Form4.lblSummaryQuantity.Text = Form4.lblSummaryQuantity.Text & pizza(2, x) & vbCrLf
+                Form4.lblSummaryPrice.Text = Form4.lblSummaryPrice.Text & pizza(1, x).ToString("C") & vbCrLf
             End If
         Next
+        Form4.lblSummaryPrice.Text = Form4.lblSummaryPrice.Text & vbCrLf & "Total Cost: " & totalammount.ToString("C")
         Form4.Show()
     End Sub
 

@@ -22,45 +22,46 @@ Partial Class Form4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lblSummary1 = New System.Windows.Forms.Label()
+        Me.lblSummaryPizzaNames = New System.Windows.Forms.Label()
         Me.btnSummaryBack = New System.Windows.Forms.Button()
-        Me.lblSummary2 = New System.Windows.Forms.Label()
-        Me.lblSummary3 = New System.Windows.Forms.Label()
+        Me.lblSummaryQuantity = New System.Windows.Forms.Label()
+        Me.lblSummaryPrice = New System.Windows.Forms.Label()
         Me.lblSummaryCustomer = New System.Windows.Forms.Label()
+        Me.btnQuit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'lblSummary1
+        'lblSummaryPizzaNames
         '
-        Me.lblSummary1.Location = New System.Drawing.Point(241, 44)
-        Me.lblSummary1.Name = "lblSummary1"
-        Me.lblSummary1.Size = New System.Drawing.Size(157, 303)
-        Me.lblSummary1.TabIndex = 0
-        Me.lblSummary1.Text = "summary"
+        Me.lblSummaryPizzaNames.Location = New System.Drawing.Point(241, 44)
+        Me.lblSummaryPizzaNames.Name = "lblSummaryPizzaNames"
+        Me.lblSummaryPizzaNames.Size = New System.Drawing.Size(157, 303)
+        Me.lblSummaryPizzaNames.TabIndex = 0
+        Me.lblSummaryPizzaNames.Text = "summary"
         '
         'btnSummaryBack
         '
-        Me.btnSummaryBack.Location = New System.Drawing.Point(12, 377)
+        Me.btnSummaryBack.Location = New System.Drawing.Point(12, 310)
         Me.btnSummaryBack.Name = "btnSummaryBack"
         Me.btnSummaryBack.Size = New System.Drawing.Size(169, 61)
         Me.btnSummaryBack.TabIndex = 38
         Me.btnSummaryBack.Text = "Go Back"
         Me.btnSummaryBack.UseVisualStyleBackColor = True
         '
-        'lblSummary2
+        'lblSummaryQuantity
         '
-        Me.lblSummary2.Location = New System.Drawing.Point(404, 44)
-        Me.lblSummary2.Name = "lblSummary2"
-        Me.lblSummary2.Size = New System.Drawing.Size(157, 303)
-        Me.lblSummary2.TabIndex = 39
-        Me.lblSummary2.Text = "summary"
+        Me.lblSummaryQuantity.Location = New System.Drawing.Point(404, 44)
+        Me.lblSummaryQuantity.Name = "lblSummaryQuantity"
+        Me.lblSummaryQuantity.Size = New System.Drawing.Size(157, 303)
+        Me.lblSummaryQuantity.TabIndex = 39
+        Me.lblSummaryQuantity.Text = "summary"
         '
-        'lblSummary3
+        'lblSummaryPrice
         '
-        Me.lblSummary3.Location = New System.Drawing.Point(567, 44)
-        Me.lblSummary3.Name = "lblSummary3"
-        Me.lblSummary3.Size = New System.Drawing.Size(157, 303)
-        Me.lblSummary3.TabIndex = 40
-        Me.lblSummary3.Text = "summary"
+        Me.lblSummaryPrice.Location = New System.Drawing.Point(567, 44)
+        Me.lblSummaryPrice.Name = "lblSummaryPrice"
+        Me.lblSummaryPrice.Size = New System.Drawing.Size(157, 303)
+        Me.lblSummaryPrice.TabIndex = 40
+        Me.lblSummaryPrice.Text = "summary"
         '
         'lblSummaryCustomer
         '
@@ -70,25 +71,36 @@ Partial Class Form4
         Me.lblSummaryCustomer.TabIndex = 41
         Me.lblSummaryCustomer.Text = "summary"
         '
+        'btnQuit
+        '
+        Me.btnQuit.Location = New System.Drawing.Point(12, 377)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(169, 61)
+        Me.btnQuit.TabIndex = 42
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lblSummaryCustomer)
-        Me.Controls.Add(Me.lblSummary3)
-        Me.Controls.Add(Me.lblSummary2)
         Me.Controls.Add(Me.btnSummaryBack)
-        Me.Controls.Add(Me.lblSummary1)
+        Me.Controls.Add(Me.btnQuit)
+        Me.Controls.Add(Me.lblSummaryCustomer)
+        Me.Controls.Add(Me.lblSummaryPrice)
+        Me.Controls.Add(Me.lblSummaryQuantity)
+        Me.Controls.Add(Me.lblSummaryPizzaNames)
         Me.Name = "Form4"
         Me.Text = "Form4"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents lblSummary1 As Label
+    Friend WithEvents lblSummaryPizzaNames As Label
     Friend WithEvents btnSummaryBack As Button
-    Friend WithEvents lblSummary2 As Label
-    Friend WithEvents lblSummary3 As Label
+    Friend WithEvents lblSummaryQuantity As Label
+    Friend WithEvents lblSummaryPrice As Label
     Friend WithEvents lblSummaryCustomer As Label
+    Friend WithEvents btnQuit As Button
 End Class
