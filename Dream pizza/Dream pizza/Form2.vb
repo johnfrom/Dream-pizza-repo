@@ -14,7 +14,7 @@
         End If
         For price = 0 To 11
             Form3.totalammount = Form3.totalammount + Form3.pizza(1, price)
-            Form3.lblTotal.Text = Form3.totalammount.ToString("C")
+            Form3.lblTotal.Text = "Total Price: " & Form3.totalammount.ToString("C")
         Next
 
         If txtName.Text = "" Then
