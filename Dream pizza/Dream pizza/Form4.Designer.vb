@@ -32,6 +32,7 @@ Partial Class Form4
         '
         'lblSummaryPizzaNames
         '
+        Me.lblSummaryPizzaNames.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSummaryPizzaNames.Location = New System.Drawing.Point(241, 44)
         Me.lblSummaryPizzaNames.Name = "lblSummaryPizzaNames"
         Me.lblSummaryPizzaNames.Size = New System.Drawing.Size(157, 303)
@@ -40,6 +41,7 @@ Partial Class Form4
         '
         'btnSummaryBack
         '
+        Me.btnSummaryBack.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSummaryBack.Location = New System.Drawing.Point(12, 310)
         Me.btnSummaryBack.Name = "btnSummaryBack"
         Me.btnSummaryBack.Size = New System.Drawing.Size(169, 61)
@@ -49,6 +51,7 @@ Partial Class Form4
         '
         'lblSummaryQuantity
         '
+        Me.lblSummaryQuantity.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSummaryQuantity.Location = New System.Drawing.Point(404, 44)
         Me.lblSummaryQuantity.Name = "lblSummaryQuantity"
         Me.lblSummaryQuantity.Size = New System.Drawing.Size(157, 303)
@@ -57,6 +60,7 @@ Partial Class Form4
         '
         'lblSummaryPrice
         '
+        Me.lblSummaryPrice.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSummaryPrice.Location = New System.Drawing.Point(567, 44)
         Me.lblSummaryPrice.Name = "lblSummaryPrice"
         Me.lblSummaryPrice.Size = New System.Drawing.Size(157, 303)
@@ -65,6 +69,7 @@ Partial Class Form4
         '
         'lblSummaryCustomer
         '
+        Me.lblSummaryCustomer.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSummaryCustomer.Location = New System.Drawing.Point(12, 44)
         Me.lblSummaryCustomer.Name = "lblSummaryCustomer"
         Me.lblSummaryCustomer.Size = New System.Drawing.Size(129, 286)
@@ -73,6 +78,7 @@ Partial Class Form4
         '
         'btnQuit
         '
+        Me.btnQuit.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnQuit.Location = New System.Drawing.Point(12, 377)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(169, 61)

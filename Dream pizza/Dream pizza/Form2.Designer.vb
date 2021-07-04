@@ -60,58 +60,65 @@ Partial Class Form2
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(510, 185)
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(510, 165)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 13)
+        Me.Label2.Size = New System.Drawing.Size(90, 14)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Customer Name:"
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(601, 182)
+        Me.txtName.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(601, 162)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(165, 20)
+        Me.txtName.Size = New System.Drawing.Size(165, 22)
         Me.txtName.TabIndex = 15
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(510, 223)
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(510, 203)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 13)
+        Me.Label3.Size = New System.Drawing.Size(83, 14)
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Phone Number:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(510, 261)
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(509, 274)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(48, 13)
+        Me.Label4.Size = New System.Drawing.Size(49, 14)
         Me.Label4.TabIndex = 18
         Me.Label4.Text = "Address:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(510, 148)
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(509, 239)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 13)
+        Me.Label5.Size = New System.Drawing.Size(52, 14)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Delivery:"
         '
         'chkDelivery
         '
         Me.chkDelivery.AutoSize = True
-        Me.chkDelivery.Location = New System.Drawing.Point(601, 147)
+        Me.chkDelivery.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkDelivery.Location = New System.Drawing.Point(600, 238)
         Me.chkDelivery.Name = "chkDelivery"
-        Me.chkDelivery.Size = New System.Drawing.Size(62, 17)
+        Me.chkDelivery.Size = New System.Drawing.Size(65, 18)
         Me.chkDelivery.TabIndex = 21
         Me.chkDelivery.Text = "($3 fee)"
         Me.chkDelivery.UseVisualStyleBackColor = True
         '
         'btnContinue
         '
+        Me.btnContinue.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnContinue.Location = New System.Drawing.Point(600, 330)
         Me.btnContinue.Name = "btnContinue"
         Me.btnContinue.Size = New System.Drawing.Size(165, 72)
@@ -121,18 +128,20 @@ Partial Class Form2
         '
         'txtPhone
         '
-        Me.txtPhone.Location = New System.Drawing.Point(601, 220)
+        Me.txtPhone.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhone.Location = New System.Drawing.Point(601, 200)
         Me.txtPhone.Mask = "(999) 000-0000"
         Me.txtPhone.Name = "txtPhone"
-        Me.txtPhone.Size = New System.Drawing.Size(165, 20)
+        Me.txtPhone.Size = New System.Drawing.Size(165, 22)
         Me.txtPhone.TabIndex = 23
         '
         'txtAddress
         '
         Me.txtAddress.Enabled = False
-        Me.txtAddress.Location = New System.Drawing.Point(601, 258)
+        Me.txtAddress.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(600, 271)
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(165, 20)
+        Me.txtAddress.Size = New System.Drawing.Size(165, 22)
         Me.txtAddress.TabIndex = 19
         '
         'Form2

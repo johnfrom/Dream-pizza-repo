@@ -42,19 +42,13 @@ Delivery Address: " & Form2.address 'also display the address
 
     End Sub
 
-    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
-
-    End Sub
-
     Private Sub btnGoBack_Click(sender As Object, e As EventArgs) Handles btnGoBack.Click
         Close()  'closes form 3
         Form2.Show() 'opens form 2
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
-        Close()
-        Form2.Close()
-        Form1.Close() 'closes all forms
+        End 'closes all forms
     End Sub
 
     Private Sub cmbCheese_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCheese.SelectedIndexChanged
