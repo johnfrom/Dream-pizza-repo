@@ -64,7 +64,6 @@ Delivery Address: " & Form2.address 'also display the address
             totalammount = totalammount + pizza(1, price) 'adds all of the single pizza cost totals to the grand total
             lblTotal.Text = "Total Price: " & totalammount.ToString("C") 'turns the total ammount into a currency and displays it on the form
         Next
-
     End Sub
 
     Private Sub cmbBeef_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBeef.SelectedIndexChanged
@@ -80,7 +79,6 @@ Delivery Address: " & Form2.address 'also display the address
             totalammount = totalammount + pizza(1, price) 'adds all of the single pizza cost totals to the grand total
             lblTotal.Text = "Total Price: " & totalammount.ToString("C") 'turns the total ammount into a currency and displays it on the form
         Next
-
     End Sub
 
     Private Sub cmbBurger_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbBurger.SelectedIndexChanged
@@ -231,8 +229,6 @@ Delivery Address: " & Form2.address 'also display the address
             totalammount = totalammount + pizza(1, price) 'adds all of the single pizza cost totals to the grand total
             lblTotal.Text = "Total Price: " & totalammount.ToString("C") 'turns the total ammount into a currency and displays it on the form
         Next
-
-
     End Sub
 
     Private Sub btnSummary_Click(sender As Object, e As EventArgs) Handles btnSummary.Click
@@ -242,23 +238,24 @@ Delivery Address: " & Form2.address 'also display the address
         If Form2.chkDelivery.Checked = True Then
             Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "Address: " & Form2.address 'if the delivery checkbox is checked in Form2 then a line showing the customers address will be shown
         End If
+        Form4.lblSummaryCustomer.Text = Form4.lblSummaryCustomer.Text & "
+
+
+
+" & "Total Price: " & totalammount.ToString("C")  'skips a few lines then displays the total price in the customer details label
 
         Form4.lblSummaryPizzaNames.Text = "Pizza" & vbCrLf & vbCrLf 'Adds the title "Pizza" to the pizza names label and adds a gap
         Form4.lblSummaryQuantity.Text = "Quantity" & vbCrLf & vbCrLf 'Adds the title "Quantity" to the pizza quantities label and adds a gap
         Form4.lblSummaryPrice.Text = "Cost" & vbCrLf & vbCrLf 'Adds the title "Cost" to the pizza costs label and adds a gap
 
         For x = 0 To 11
-            If pizza(1, x) > 0 Then
-                Form4.lblSummaryPizzaNames.Text = Form4.lblSummaryPizzaNames.Text & pizzanames(0, x) & vbCrLf '
-                Form4.lblSummaryQuantity.Text = Form4.lblSummaryQuantity.Text & pizza(2, x) & vbCrLf
-                Form4.lblSummaryPrice.Text = Form4.lblSummaryPrice.Text & pizza(1, x).ToString("C") & vbCrLf
+            If pizza(1, x) > 0 Then  'if 1 or more of a pizza flavor is selected
+                Form4.lblSummaryPizzaNames.Text = Form4.lblSummaryPizzaNames.Text & pizzanames(0, x) & vbCrLf 'display that pizza flavor's name in the left summary label
+                Form4.lblSummaryQuantity.Text = Form4.lblSummaryQuantity.Text & pizza(2, x) & vbCrLf 'display the quantity of that pizza flavor that the customer selected in the middle summary label 
+                Form4.lblSummaryPrice.Text = Form4.lblSummaryPrice.Text & pizza(1, x).ToString("C") & vbCrLf 'display the price of however many pizzas were ordered in the right summary label
             End If
         Next
-        Form4.lblSummaryPrice.Text = Form4.lblSummaryPrice.Text & vbCrLf & "Total Cost: " & totalammount.ToString("C")
-        Form4.Show()
-    End Sub
-
-    Private Sub lblTotal_Click(sender As Object, e As EventArgs) Handles lblTotal.Click
-
+        Me.Hide() 'hide the pizza ordering form
+        Form4.Show() 'display the summary form
     End Sub
 End Class
